@@ -1,0 +1,768 @@
+{
+  "sentiment_data": [
+    {
+      "sohbet_id": 90001,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimde bir ürün eksik geldi. Ne yapmalıyım?\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 98765432\nBot: Kontrol ediyorum... Siparişinizde bir hata olduğunu görüyorum. Yeni ürününüz en kısa sürede gönderilecektir. Özür dileriz.\nMüşteri: Harika, teşekkür ederim!\nBot: Rica ederim, iyi günler dileriz.",
+      "ground_truth_sentiment": "Pozitif",
+      "customer_messages": "Siparişimde bir ürün eksik geldi. Ne yapmalıyım? 98765432 Harika, teşekkür ederim!"
+    },
+    {
+      "sohbet_id": 90002,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Hesabıma giriş yapamıyorum, şifremi unuttum.\nBot: Şifre sıfırlama linki için e-posta adresinizi girer misiniz?\nMüşteri: Şifremi sıfırlama linki gelmiyor. Başka bir yol yok mu?\nBot: E-posta kutunuzun spam klasörünü kontrol ettiniz mi?\nMüşteri: Evet, kontrol ettim. Hiçbir yerde yok. Bu durum çok can sıkıcı.",
+      "ground_truth_sentiment": "Negatif",
+      "customer_messages": "Hesabıma giriş yapamıyorum, şifremi unuttum. Şifremi sıfırlama linki gelmiyor. Başka bir yol yok mu? Evet, kontrol ettim. Hiçbir yerde yok. Bu durum çok can sıkıcı."
+    },
+    {
+      "sohbet_id": 90003,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: İade süreci hakkında bilgi almak istiyorum.\nBot: İade sürecimiz 14 gündür. Ürünü orijinal paketiyle birlikte kargoya vermeniz yeterlidir. İade kodunuzu oluşturmak için sipariş numaranızı alabilir miyim?\nMüşteri: Anladım, teşekkürler.\nBot: Başka bir sorunuz olursa buradayım.",
+      "ground_truth_sentiment": "Nötr",
+      "customer_messages": "İade süreci hakkında bilgi almak istiyorum. Anladım, teşekkürler."
+    },
+    {
+      "sohbet_id": 90004,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kupon kodum çalışmıyor. 'Hoş Geldin15' kuponunu kullanmak istiyorum ama hata veriyor.\nBot: Kuponunuzun geçerlilik koşullarını kontrol ettiniz mi? Örneğin, minimum sepet tutarı veya belirli ürünler için geçerli olup olmadığı gibi.\nMüşteri: Evet, her şeyi kontrol ettim. Sepetim de 200 TL üzerinde. Ne yapabilirim?\nBot: Sistemde kuponunuzla ilgili bir sorun görünmüyor. Lütfen farklı bir tarayıcıdan denemeyi veya önbelleğinizi temizlemeyi deneyin.\nMüşteri: Bunları zaten denedim! Sizinle konuşmak zaman kaybı oldu. Hiç yardımcı olmuyorsunuz.",
+      "ground_truth_sentiment": "Negatif",
+      "customer_messages": "Kupon kodum çalışmıyor. 'Hoş Geldin15' kuponunu kullanmak istiyorum ama hata veriyor. Evet, her şeyi kontrol ettim. Sepetim de 200 TL üzerinde. Ne yapabilirim? Bunları zaten denedim! Sizinle konuşmak zaman kaybı oldu. Hiç yardımcı olmuyorsunuz."
+    },
+    {
+      "sohbet_id": 90005,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimi iptal etmek istiyorum.\nBot: Sipariş numaranızı paylaşır mısınız?\nMüşteri: 76458902\nBot: Siparişiniz başarılı bir şekilde iptal edilmiştir. İadeniz en kısa sürede gerçekleştirilecektir.\nMüşteri: Çok teşekkür ederim!\nBot: Rica ederim, iyi günler.",
+      "ground_truth_sentiment": "Pozitif",
+      "customer_messages": "Siparişimi iptal etmek istiyorum. 76458902 Çok teşekkür ederim!"
+    },
+    {
+      "sohbet_id": 90006,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: İade kargom ne zaman ulaşır?\nBot: İade takip kodunuzu paylaşır mısınız?\nMüşteri: 654321987\nBot: Kontrol ediyorum... İadeniz 2 gün içinde elimize ulaşacaktır.\nMüşteri: Tamam, teşekkür ederim.\nBot: Rica ederim, iyi günler dileriz.",
+      "ground_truth_sentiment": "Nötr",
+      "customer_messages": "İade kargom ne zaman ulaşır? 654321987 Tamam, teşekkür ederim."
+    },
+    {
+      "sohbet_id": 90007,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürünüm defolu geldi. Değişim veya iade yapmak istiyorum.\nBot: Bu konuda size yardımcı olabilirim. Lütfen sipariş numaranızı ve ürünün defolu kısmının fotoğrafını gönderin.\nMüşteri: Telefonumdan fotoğraf çekemiyorum, başka bir yol yok mu?\nBot: Maalesef, defolu ürün işlemleri için fotoğraf kanıtı gerekmektedir.\nMüşteri: Bu çok saçma! O zaman iade de yapamayacak mıyım?",
+      "ground_truth_sentiment": "Negatif",
+      "customer_messages": "Ürünüm defolu geldi. Değişim veya iade yapmak istiyorum. Telefonumdan fotoğraf çekemiyorum, başka bir yol yok mu? Bu çok saçma! O zaman iade de yapamayacak mıyım?"
+    },
+    {
+      "sohbet_id": 90008,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Üyelik bilgilerimi güncellemek istiyorum.\nBot: Hesabım sayfasından 'Bilgilerimi Düzenle' seçeneği ile bu işlemi gerçekleştirebilirsiniz. Eğer sorun yaşarsanız, tekrar bana yazın.\nMüşteri: Teşekkür ederim, deneyeceğim.\nBot: Rica ederim. Başka bir şeye ihtiyacınız olursa buradayım.",
+      "ground_truth_sentiment": "Nötr",
+      "customer_messages": "Üyelik bilgilerimi güncellemek istiyorum. Teşekkür ederim, deneyeceğim."
+    },
+    {
+      "sohbet_id": 90009,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Faturamda bir yanlışlık var. Fiyatlar hatalı görünüyor.\nBot: Sipariş numaranızı ve faturadaki hatalı fiyat bilgisini paylaşır mısınız?\nMüşteri: Sipariş numarası 54897213. Fatura detayları ekte.\nBot: Kontrol ediyorum... Faturanızdaki hatayı düzelterek yeni faturayı size e-posta ile göndereceğim. Sorun için özür dileriz.\nMüşteri: Çok teşekkürler, çok iyi oldu bu.\nBot: Rica ederim, başka bir konuda yardımcı olmamı ister misiniz?",
+      "ground_truth_sentiment": "Pozitif",
+      "customer_messages": "Faturamda bir yanlışlık var. Fiyatlar hatalı görünüyor. Sipariş numarası 54897213. Fatura detayları ekte. Çok teşekkürler, çok iyi oldu bu."
+    },
+    {
+      "sohbet_id": 90010,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimi iptal etmek istiyorum ama sistemde 'iptal et' butonu görünmüyor.\nBot: Siparişiniz kargoya verildiği için 'iptal et' butonu görünmüyor olabilir. Bu durumda iade süreciyle devam etmeniz gerekir.\nMüşteri: Ama siparişim daha yeni kargoya verildi. İptal edebilmem gerekirdi. Çok kötü bir hizmet.",
+      "ground_truth_sentiment": "Negatif",
+      "customer_messages": "Siparişimi iptal etmek istiyorum ama sistemde 'iptal et' butonu görünmüyor. Ama siparişim daha yeni kargoya verildi. İptal edebilmem gerekirdi. Çok kötü bir hizmet."
+    },
+    {
+      "sohbet_id": 90011,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürün stok bilgisi hakkında bilgi almak istiyorum. Stokta yok görünüyor ama ne zaman gelir?\nBot: Ürün kodunu veya adını paylaşır mısınız?\nMüşteri: Elbise kodu: AB-456.\nBot: Maalesef, bu ürün için henüz bir stok yenileme tarihi belirlenmedi.\nMüşteri: Anladım. Teşekkürler yine de.\nBot: Rica ederim.",
+      "ground_truth_sentiment": "Nötr",
+      "customer_messages": "Ürün stok bilgisi hakkında bilgi almak istiyorum. Stokta yok görünüyor ama ne zaman gelir? Elbise kodu: AB-456. Anladım. Teşekkürler yine de."
+    },
+    {
+      "sohbet_id": 90012,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kredi kartımdan iki kez çekim yapılmış.\nBot: Sipariş numaranızı ve banka ekstrenizin ekran görüntüsünü paylaşır mısınız?\nMüşteri: Banka ekstresini çekemedim, telefonda uygulamam çalışmıyor.\nBot: Maalesef, iki kez çekim işlemi için banka ekstresi kanıtı gereklidir.\nMüşteri: O zaman ne yapacağım? Bana bir müşteri temsilcisi bağlayın. Bu botun bir faydası yok.",
+      "ground_truth_sentiment": "Negatif",
+      "customer_messages": "Kredi kartımdan iki kez çekim yapılmış. Banka ekstresini çekemedim, telefonda uygulamam çalışmıyor. O zaman ne yapacağım? Bana bir müşteri temsilcisi bağlayın. Bu botun bir faydası yok."
+    },
+    {
+      "sohbet_id": 90013,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişim hala hazırlanıyor görünüyor. Ne zaman kargoya verilir?\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 21345678\nBot: Kontrol ediyorum... Siparişiniz bugün kargoya verilecek. Takip numaranız e-posta adresinize gönderilecektir.\nMüşteri: Tamam, çok sağolun.\nBot: Rica ederim. İyi günler dileriz.",
+      "ground_truth_sentiment": "Nötr",
+      "customer_messages": "Siparişim hala hazırlanıyor görünüyor. Ne zaman kargoya verilir? 21345678 Tamam, çok sağolun."
+    },
+    {
+      "sohbet_id": 90014,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kredi kartım neden reddediliyor?\nBot: Kredi kartı reddedilme nedenlerini güvenlik ve gizlilik nedeniyle göremiyorum. Bu durumu bankanızla görüşmeniz en doğru seçenek olacaktır.\nMüşteri: Siz yardımcı olamayacaksanız neden buradasınız? Çok sinir bozucu bir durum.",
+      "ground_truth_sentiment": "Negatif",
+      "customer_messages": "Kredi kartım neden reddediliyor? Siz yardımcı olamayacaksanız neden buradasınız? Çok sinir bozucu bir durum."
+    },
+    {
+      "sohbet_id": 90015,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürün beden tablosunu bulamıyorum.\nBot: Hangi ürünü arıyorsunuz? Genellikle ürün sayfasında 'Beden Tablosu' başlığı altında bu bilgi yer alır.\nMüşteri: Tamam, buldum şimdi. Gözümden kaçmış.\nBot: Sevindim. Başka bir sorunuz olursa çekinmeyin.",
+      "ground_truth_sentiment": "Nötr",
+      "customer_messages": "Ürün beden tablosunu bulamıyorum. Tamam, buldum şimdi. Gözümden kaçmış."
+    },
+    {
+      "sohbet_id": 90016,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Adresimi yanlış girdim, nasıl düzeltebilirim?\nBot: Siparişiniz kargoya verilmediyse, hesabım bölümünden sipariş detaylarına giderek adresinizi güncelleyebilirsiniz.\nMüşteri: Siparişimi dün verdim, kargoya verilmiş. O zaman ne olacak?\nBot: Bu durumda kargo firmasıyla iletişime geçmeniz gerekmektedir.\nMüşteri: Her şey için beni kargoya yönlendiriyorsunuz. Hiçbir işe yaramıyorsunuz.",
+      "ground_truth_sentiment": "Negatif",
+      "customer_messages": "Adresimi yanlış girdim, nasıl düzeltebilirim? Siparişimi dün verdim, kargoya verilmiş. O zaman ne olacak? Her şey için beni kargoya yönlendiriyorsunuz. Hiçbir işe yaramıyorsunuz."
+    },
+    {
+      "sohbet_id": 90017,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürün yorumumu neden yayınlamadınız?\nBot: Yorumlar, içerik kurallarına uygunluk açısından incelenmektedir. Yorumunuzun kurallarımıza aykırı bir içeriği olabilir.\nMüşteri: Hangi kurala aykırı? Bana bir açıklama yapın. Çok sinirliyim.",
+      "ground_truth_sentiment": "Negatif",
+      "customer_messages": "Ürün yorumumu neden yayınlamadınız? Hangi kurala aykırı? Bana bir açıklama yapın. Çok sinirliyim."
+    },
+    {
+      "sohbet_id": 90018,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Sitede gezinirken sürekli hata alıyorum. '404 not found' diyor.\nBot: Yaşadığınız sorun için üzgünüz. Teknik ekibimiz bu hatayı en kısa sürede çözecektir.\nMüşteri: Anladım. Teşekkürler.\nBot: Yardımcı olabildiğime sevindim. İyi günler.",
+      "ground_truth_sentiment": "Nötr",
+      "customer_messages": "Sitede gezinirken sürekli hata alıyorum. '404 not found' diyor. Anladım. Teşekkürler."
+    },
+    {
+      "sohbet_id": 90019,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Sipariş verdim ama hesabımdan para çekildi. Siparişlerim sayfasında görünmüyor.\nBot: Ödeme bilgilerinizle bir sorun olabilir. Lütfen bir süre bekleyin, işlem bankanız tarafından iade edilebilir.\nMüşteri: Yine mi bekleyeceğim? Bu ne kadar kötü bir sistem. Paramı geri istiyorum. Ne yapacağım şimdi?",
+      "ground_truth_sentiment": "Negatif",
+      "customer_messages": "Sipariş verdim ama hesabımdan para çekildi. Siparişlerim sayfasında görünmüyor. Yine mi bekleyeceğim? Bu ne kadar kötü bir sistem. Paramı geri istiyorum. Ne yapacağım şimdi?"
+    },
+    {
+      "sohbet_id": 90020,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürün hakkında bilgi almak istiyorum, kumaşı nedir?\nBot: Hangi ürünü merak ediyorsunuz? Genellikle ürün açıklamasında bu bilgi yer almaktadır.\nMüşteri: Tamam, kontrol ettim. Açıklamada yazıyormuş, teşekkür ederim.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_sentiment": "Nötr",
+      "customer_messages": "Ürün hakkında bilgi almak istiyorum, kumaşı nedir? Tamam, kontrol ettim. Açıklamada yazıyormuş, teşekkür ederim."
+    },
+    {
+      "sohbet_id": 90021,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimde promosyon ürünleri eksik geldi. Ne yapabilirim?\nBot: Sipariş numaranızı ve eksik gelen promosyon ürünlerini paylaşır mısınız?\nMüşteri: 85472196. Eksik olanlar çanta ve cüzdan.\nBot: Eksik ürünleriniz en kısa sürede kargoya verilecektir. Yaşanan aksaklık için özür dileriz.\nMüşteri: Çok teşekkür ederim, hızlı çözüm için.\nBot: Rica ederim. Başka bir şey olursa buradayım.",
+      "ground_truth_sentiment": "Pozitif",
+      "customer_messages": "Siparişimde promosyon ürünleri eksik geldi. Ne yapabilirim? 85472196. Eksik olanlar çanta ve cüzdan. Çok teşekkür ederim, hızlı çözüm için."
+    },
+    {
+      "sohbet_id": 90022,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimi iptal ettim ama param hala iade edilmedi.\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 98745612\nBot: İadenizin bankanıza yansıma süresi 1-5 iş günüdür. Lütfen banka ekstrenizi kontrol edin.\nMüşteri: Siparişimi 1 hafta önce iptal ettim zaten! Çok iyi bir hizmet değil bu.",
+      "ground_truth_sentiment": "Negatif",
+      "customer_messages": "Siparişimi iptal ettim ama param hala iade edilmedi. 98745612 Siparişimi 1 hafta önce iptal ettim zaten! Çok iyi bir hizmet değil bu."
+    },
+    {
+      "sohbet_id": 90023,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürünümde hasar var, kargodan kaynaklı olduğunu düşünüyorum.\nBot: Sipariş numaranızı ve ürünün hasarlı fotoğrafını gönderir misiniz?\nMüşteri: 78965412. Fotoğrafı çektim, gönderiyorum.\nBot: Fotoğrafınız incelenmiştir. Hasarlı ürününüz en kısa sürede yenisiyle değiştirilecektir.\nMüşteri: Çok iyi, teşekkürler!\nBot: Rica ederim, iyi günler dileriz.",
+      "ground_truth_sentiment": "Pozitif",
+      "customer_messages": "Ürünümde hasar var, kargodan kaynaklı olduğunu düşünüyorum. 78965412. Fotoğrafı çektim, gönderiyorum. Çok iyi, teşekkürler!"
+    },
+    {
+      "sohbet_id": 90024,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürünü denedim ve rengini beğenmedim, değişim yapmak istiyorum.\nBot: İade sürecini başlatarak istediğiniz renkteki ürünü yeniden sipariş edebilirsiniz.\nMüşteri: Değişim seçeneği yok mu? İade ve yeniden sipariş çok zahmetli. Çok kötü bir sistem.",
+      "ground_truth_sentiment": "Negatif",
+      "customer_messages": "Ürünü denedim ve rengini beğenmedim, değişim yapmak istiyorum. Değişim seçeneği yok mu? İade ve yeniden sipariş çok zahmetli. Çok kötü bir sistem."
+    },
+    {
+      "sohbet_id": 90025,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: İndirim kampanyaları hakkında bilgi almak istiyorum.\nBot: Kampanyalarımız ana sayfamızda ve e-posta bültenimizde yer almaktadır. E-posta bültenimize üye olarak güncel kampanyalardan haberdar olabilirsiniz.\nMüşteri: Tamam, kontrol edeceğim. Teşekkürler.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_sentiment": "Nötr",
+      "customer_messages": "İndirim kampanyaları hakkında bilgi almak istiyorum. Tamam, kontrol edeceğim. Teşekkürler."
+    },
+    {
+      "sohbet_id": 90026,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Sipariş verdim ama yanlış ürün geldi.\nBot: Sipariş numaranızı ve yanlış gelen ürünün fotoğrafını paylaşır mısınız?\nMüşteri: 65432198. Fotoğrafı ekledim.\nBot: Kontrol ediyorum... Doğru ürününüz en kısa sürede adresinize gönderilecektir. Yanlış gelen ürünü kargo ile ücretsiz olarak iade edebilirsiniz.\nMüşteri: Çok iyi, teşekkür ederim.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_sentiment": "Pozitif",
+      "customer_messages": "Sipariş verdim ama yanlış ürün geldi. 65432198. Fotoğrafı ekledim. Çok iyi, teşekkür ederim."
+    },
+    {
+      "sohbet_id": 90027,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Hesabımı kapatmak istiyorum.\nBot: Hesabınızı Hesabım sayfasından 'Hesabımı Kapat' butonu ile kapatabilirsiniz.\nMüşteri: Anladım, teşekkürler.\nBot: Rica ederim. Başka bir şey olursa buradayım.",
+      "ground_truth_sentiment": "Nötr",
+      "customer_messages": "Hesabımı kapatmak istiyorum. Anladım, teşekkürler."
+    },
+    {
+      "sohbet_id": 90028,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimde bir ürün eksik geldi, ancak siparişi verdiğimde ürünün stokta olduğunu görüyordum.\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 987456321\nBot: Stok durumunu kontrol ettim. Ürününüz stokta bulunmuyor, bu nedenle siparişinize eklenememiş. En kısa sürede para iadesi yapılacaktır.\nMüşteri: O zaman neden ürünü sipariş verdirdiniz? İade istemiyorum, ürünü istiyorum. Çok kötü bir deneyim oldu.",
+      "ground_truth_sentiment": "Negatif",
+      "customer_messages": "Siparişimde bir ürün eksik geldi, ancak siparişi verdiğimde ürünün stokta olduğunu görüyordum. 987456321 O zaman neden ürünü sipariş verdirdiniz? İade istemiyorum, ürünü istiyorum. Çok kötü bir deneyim oldu."
+    },
+    {
+      "sohbet_id": 90029,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: İade sürecinde bir sorun çıktı, iade kodum geçersiz görünüyor.\nBot: Sipariş ve iade kodunuzu alabilir miyim?\nMüşteri: 456123789. İade kodu XYZ-1234.\nBot: İade kodunuzun süresi dolmuş olabilir. Sizin için yeni bir iade kodu oluşturdum: ABC-5678.\nMüşteri: Harika! Çok teşekkürler.\nBot: Rica ederim. Başka bir şey olursa yardımcı olmaktan mutluluk duyarım.",
+      "ground_truth_sentiment": "Pozitif",
+      "customer_messages": "İade sürecinde bir sorun çıktı, iade kodum geçersiz görünüyor. 456123789. İade kodu XYZ-1234. Harika! Çok teşekkürler."
+    },
+    {
+      "sohbet_id": 90030,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimin teslimat adresi yanlış yazılmış, nasıl düzeltebilirim?\nBot: Siparişiniz henüz kargoya verilmediyse, hesabım bölümünden sipariş detaylarına giderek adresinizi güncelleyebilirsiniz.\nMüşteri: Sipariş vereli 10 dakika oldu, ne zaman kargoya verilir?\nBot: Siparişler genellikle 1 iş günü içinde kargoya verilir. Lütfen güncellemeyi yapın.\nMüşteri: Teşekkürler, çok yardımcı oldunuz.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_sentiment": "Pozitif",
+      "customer_messages": "Siparişimin teslimat adresi yanlış yazılmış, nasıl düzeltebilirim? Sipariş vereli 10 dakika oldu, ne zaman kargoya verilir? Teşekkürler, çok yardımcı oldunuz."
+    },
+    {
+      "sohbet_id": 90031,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimin durumu hakkında bilgi almak istiyorum.\nBot: Sipariş numaranızı paylaşır mısınız?\nMüşteri: 54321678\nBot: Siparişiniz kargoya verilmiş ve yolda. Tahmini teslimat tarihi 3-4 gün içinde.\nMüşteri: Tamam, çok sağolun.\nBot: Rica ederim. Başka bir sorunuz olursa buradayım.",
+      "ground_truth_sentiment": "Nötr",
+      "customer_messages": "Siparişimin durumu hakkında bilgi almak istiyorum. 54321678 Tamam, çok sağolun."
+    },
+    {
+      "sohbet_id": 90032,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Sipariş verdim ama hesabımdan para çekilmedi.\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 34567890\nBot: Kontrol ettim, siparişiniz tamamlanmamış görünüyor. Lütfen tekrar deneyin.\nMüşteri: Tekrar denedim yine olmadı. Ne yapabilirim?",
+      "ground_truth_sentiment": "Negatif",
+      "customer_messages": "Sipariş verdim ama hesabımdan para çekilmedi. 34567890 Tekrar denedim yine olmadı. Ne yapabilirim?"
+    },
+    {
+      "sohbet_id": 90033,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürünü denemek için sipariş verdim, bedeni olmadı.\nBot: Bu durumda iade sürecini başlatabilirsiniz. Lütfen sipariş numaranızı girin.\nMüşteri: 12398765\nBot: İade kodunuz oluşturulmuştur. Kargoya ücretsiz olarak verebilirsiniz.\nMüşteri: Çok teşekkür ederim, çok hızlı oldu.\nBot: Rica ederim. Başka bir sorunuz olursa buradayım.",
+      "ground_truth_sentiment": "Pozitif",
+      "customer_messages": "Ürünü denemek için sipariş verdim, bedeni olmadı. 12398765 Çok teşekkür ederim, çok hızlı oldu."
+    },
+    {
+      "sohbet_id": 90034,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kupon kodum neden çalışmıyor?\nBot: Kupon kodunuzun süresi dolmuş veya geçerli olduğu ürün ve sepet tutarı kriterlerini karşılamıyor olabilir.\nMüşteri: Kontrol ettim, her şey uygun görünüyor. Başka bir sebep olabilir mi?\nBot: Maalesef, sistemde kuponunuzla ilgili bir hata görünmüyor.\nMüşteri: O zaman ne yapacağım? Bir çözümünüz yok mu? Çok kötü bir hizmet.",
+      "ground_truth_sentiment": "Negatif",
+      "customer_messages": "Kupon kodum neden çalışmıyor? Kontrol ettim, her şey uygun görünüyor. Başka bir sebep olabilir mi? O zaman ne yapacağım? Bir çözümünüz yok mu? Çok kötü bir hizmet."
+    },
+    {
+      "sohbet_id": 90035,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kargom nerede kaldı? Takip numaram çalışmıyor.\nBot: Kargo takip numaranızı paylaşır mısınız?\nMüşteri: 1234567890\nBot: Kontrol ediyorum... Kargonuz henüz kargo firmasına teslim edilmemiş. Lütfen biraz bekleyin.\nMüşteri: Ne kadar bekleyeceğim? Bu durumdan hiç memnun kalmadım.",
+      "ground_truth_sentiment": "Negatif",
+      "customer_messages": "Kargom nerede kaldı? Takip numaram çalışmıyor. 1234567890 Ne kadar bekleyeceğim? Bu durumdan hiç memnun kalmadım."
+    },
+    {
+      "sohbet_id": 90036,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Müşteri temsilcisiyle görüşmek istiyorum.\nBot: Belirli bir konuda yardımcı olabilmem için sorununuzu yazabilir misiniz?\nMüşteri: Siparişimi iptal etmek istiyorum. Sipariş numarası: 87654321.\nBot: Siparişiniz kargoya verilmeden iptal edilmiştir. Başka bir şeye ihtiyacınız olursa buradayım.\nMüşteri: Teşekkür ederim.\nBot: Rica ederim.",
+      "ground_truth_sentiment": "Pozitif",
+      "customer_messages": "Müşteri temsilcisiyle görüşmek istiyorum. Siparişimi iptal etmek istiyorum. Sipariş numarası: 87654321. Teşekkür ederim."
+    },
+    {
+      "sohbet_id": 90037,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürünümde bir hata var, tamir ettirmek istiyorum.\nBot: Hangi ürün olduğunu ve hatanın ne olduğunu belirtir misiniz?\nMüşteri: Kulaklık. Şarjı tutmuyor. Garanti kapsamında tamir ettirebilir miyim?\nBot: Ürününüzü teknik servisimize göndermeniz gerekmektedir. Adres ve gönderim detayları için e-posta adresinizi paylaşır mısınız?\nMüşteri: Tamam, teşekkürler.\nBot: Rica ederim. Sorunuz çözüldü mü?",
+      "ground_truth_sentiment": "Nötr",
+      "customer_messages": "Ürünümde bir hata var, tamir ettirmek istiyorum. Kulaklık. Şarjı tutmuyor. Garanti kapsamında tamir ettirebilir miyim? Tamam, teşekkürler."
+    },
+    {
+      "sohbet_id": 90038,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: E-posta bülteninizden çıkmak istiyorum.\nBot: Size gönderilen e-postaların en altında yer alan 'abonelikten çık' linkini kullanarak bu işlemi gerçekleştirebilirsiniz.\nMüşteri: Anladım. Teşekkürler.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_sentiment": "Nötr",
+      "customer_messages": "E-posta bülteninizden çıkmak istiyorum. Anladım. Teşekkürler."
+    },
+    {
+      "sohbet_id": 90039,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kargom 2 gün önce dağıtıma çıktı, neden hala gelmedi?\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 876543210\nBot: Kargo firmasıyla iletişime geçtik. Kargonuzda bir gecikme yaşanmış. Yarın gün içinde size teslim edilecektir.\nMüşteri: Tamam, teşekkürler. Artık yarın gelsin.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_sentiment": "Nötr",
+      "customer_messages": "Kargom 2 gün önce dağıtıma çıktı, neden hala gelmedi? 876543210 Tamam, teşekkürler. Artık yarın gelsin."
+    },
+    {
+      "sohbet_id": 90040,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: İade sürecim neden bu kadar uzun sürüyor? 10 gündür bekliyorum.\nBot: İade numaranızı paylaşır mısınız?\nMüşteri: 123456\nBot: İadeniz depomuza ulaşmış ancak inceleme aşamasında. Bu süreç bankaya yansımadan önce 1-3 iş günü sürebilir.\nMüşteri: 10 gündür bekliyorum. Bu ne demek? Artık yeter. Ne kadar kötü bir hizmet.",
+      "ground_truth_sentiment": "Negatif",
+      "customer_messages": "İade sürecim neden bu kadar uzun sürüyor? 10 gündür bekliyorum. 123456 10 gündür bekliyorum. Bu ne demek? Artık yeter. Ne kadar kötü bir hizmet."
+    }
+  ],
+  "intent_data": [
+    {
+      "sohbet_id": 90001,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimde bir ürün eksik geldi. Ne yapmalıyım?\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 98765432\nBot: Kontrol ediyorum... Siparişinizde bir hata olduğunu görüyorum. Yeni ürününüz en kısa sürede gönderilecektir. Özür dileriz.\nMüşteri: Harika, teşekkür ederim!\nBot: Rica ederim, iyi günler dileriz.",
+      "ground_truth_intent": "Eksik ürün",
+      "ground_truth_intent_detay": "Sipariş teslimatında eksik ürün",
+      "ground_truth_tur": "Şikayet"
+    },
+    {
+      "sohbet_id": 90002,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Hesabıma giriş yapamıyorum, şifremi unuttum.\nBot: Şifre sıfırlama linki için e-posta adresinizi girer misiniz?\nMüşteri: Şifremi sıfırlama linki gelmiyor. Başka bir yol yok mu?\nBot: E-posta kutunuzun spam klasörünü kontrol ettiniz mi?\nMüşteri: Evet, kontrol ettim. Hiçbir yerde yok. Bu durum çok can sıkıcı.",
+      "ground_truth_intent": "Şifre sıfırlama",
+      "ground_truth_intent_detay": "E-posta linki gelmemesi",
+      "ground_truth_tur": "Sorun"
+    },
+    {
+      "sohbet_id": 90003,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: İade süreci hakkında bilgi almak istiyorum.\nBot: İade sürecimiz 14 gündür. Ürünü orijinal paketiyle birlikte kargoya vermeniz yeterlidir. İade kodunuzu oluşturmak için sipariş numaranızı alabilir miyim?\nMüşteri: Anladım, teşekkürler.\nBot: Başka bir sorunuz olursa buradayım.",
+      "ground_truth_intent": "İade",
+      "ground_truth_intent_detay": "İade prosedürü hakkında bilgi",
+      "ground_truth_tur": "Bilgi alma"
+    },
+    {
+      "sohbet_id": 90004,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kupon kodum çalışmıyor. 'Hoş Geldin15' kuponunu kullanmak istiyorum ama hata veriyor.\nBot: Kuponunuzun geçerlilik koşullarını kontrol ettiniz mi? Örneğin, minimum sepet tutarı veya belirli ürünler için geçerli olup olmadığı gibi.\nMüşteri: Evet, her şeyi kontrol ettim. Sepetim de 200 TL üzerinde. Ne yapabilirim?\nBot: Sistemde kuponunuzla ilgili bir sorun görünmüyor. Lütfen farklı bir tarayıcıdan denemeyi veya önbelleğinizi temizlemeyi deneyin.\nMüşteri: Bunları zaten denedim! Sizinle konuşmak zaman kaybı oldu. Hiç yardımcı olmuyorsunuz.",
+      "ground_truth_intent": "Kupon",
+      "ground_truth_intent_detay": "Kupon kodunun çalışmaması",
+      "ground_truth_tur": "Sorun"
+    },
+    {
+      "sohbet_id": 90005,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimi iptal etmek istiyorum.\nBot: Sipariş numaranızı paylaşır mısınız?\nMüşteri: 76458902\nBot: Siparişiniz başarılı bir şekilde iptal edilmiştir. İadeniz en kısa sürede gerçekleştirilecektir.\nMüşteri: Çok teşekkür ederim!\nBot: Rica ederim, iyi günler.",
+      "ground_truth_intent": "İptal",
+      "ground_truth_intent_detay": "Sipariş iptali",
+      "ground_truth_tur": "İstek"
+    },
+    {
+      "sohbet_id": 90006,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: İade kargom ne zaman ulaşır?\nBot: İade takip kodunuzu paylaşır mısınız?\nMüşteri: 654321987\nBot: Kontrol ediyorum... İadeniz 2 gün içinde elimize ulaşacaktır.\nMüşteri: Tamam, teşekkür ederim.\nBot: Rica ederim, iyi günler dileriz.",
+      "ground_truth_intent": "İade",
+      "ground_truth_intent_detay": "İade kargosu takibi",
+      "ground_truth_tur": "Soru"
+    },
+    {
+      "sohbet_id": 90007,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürünüm defolu geldi. Değişim veya iade yapmak istiyorum.\nBot: Bu konuda size yardımcı olabilirim. Lütfen sipariş numaranızı ve ürünün defolu kısmının fotoğrafını gönderin.\nMüşteri: Telefonumdan fotoğraf çekemiyorum, başka bir yol yok mu?\nBot: Maalesef, defolu ürün işlemleri için fotoğraf kanıtı gerekmektedir.\nMüşteri: Bu çok saçma! O zaman iade de yapamayacak mıyım?",
+      "ground_truth_intent": "Defolu ürün",
+      "ground_truth_intent_detay": "Değişim/iade yapılamaması",
+      "ground_truth_tur": "Şikayet"
+    },
+    {
+      "sohbet_id": 90008,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Üyelik bilgilerimi güncellemek istiyorum.\nBot: Hesabım sayfasından 'Bilgilerimi Düzenle' seçeneği ile bu işlemi gerçekleştirebilirsiniz. Eğer sorun yaşarsanız, tekrar bana yazın.\nMüşteri: Teşekkür ederim, deneyeceğim.\nBot: Rica ederim. Başka bir şeye ihtiyacınız olursa buradayım.",
+      "ground_truth_intent": "Hesap bilgisi",
+      "ground_truth_intent_detay": "Üyelik bilgisi güncelleme",
+      "ground_truth_tur": "İstek"
+    },
+    {
+      "sohbet_id": 90009,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Faturamda bir yanlışlık var. Fiyatlar hatalı görünüyor.\nBot: Sipariş numaranızı ve faturadaki hatalı fiyat bilgisini paylaşır mısınız?\nMüşteri: Sipariş numarası 54897213. Fatura detayları ekte.\nBot: Kontrol ediyorum... Faturanızdaki hatayı düzelterek yeni faturayı size e-posta ile göndereceğim. Sorun için özür dileriz.\nMüşteri: Çok teşekkürler, çok iyi oldu bu.\nBot: Rica ederim, başka bir konuda yardımcı olmamı ister misiniz?",
+      "ground_truth_intent": "Fatura hatası",
+      "ground_truth_intent_detay": "Fatura fiyatı hatası",
+      "ground_truth_tur": "Şikayet"
+    },
+    {
+      "sohbet_id": 90010,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimi iptal etmek istiyorum ama sistemde 'iptal et' butonu görünmüyor.\nBot: Siparişiniz kargoya verildiği için 'iptal et' butonu görünmüyor olabilir. Bu durumda iade süreciyle devam etmeniz gerekir.\nMüşteri: Ama siparişim daha yeni kargoya verildi. İptal edebilmem gerekirdi. Çok kötü bir hizmet.",
+      "ground_truth_intent": "İptal",
+      "ground_truth_intent_detay": "Sipariş iptali yapılamaması",
+      "ground_truth_tur": "Sorun"
+    },
+    {
+      "sohbet_id": 90011,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürün stok bilgisi hakkında bilgi almak istiyorum. Stokta yok görünüyor ama ne zaman gelir?\nBot: Ürün kodunu veya adını paylaşır mısınız?\nMüşteri: Elbise kodu: AB-456.\nBot: Maalesef, bu ürün için henüz bir stok yenileme tarihi belirlenmedi.\nMüşteri: Anladım. Teşekkürler yine de.\nBot: Rica ederim.",
+      "ground_truth_intent": "Stok",
+      "ground_truth_intent_detay": "Stok yenileme tarihi",
+      "ground_truth_tur": "Soru"
+    },
+    {
+      "sohbet_id": 90012,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kredi kartımdan iki kez çekim yapılmış.\nBot: Sipariş numaranızı ve banka ekstrenizin ekran görüntüsünü paylaşır mısınız?\nMüşteri: Banka ekstresini çekemedim, telefonda uygulamam çalışmıyor.\nBot: Maalesef, iki kez çekim işlemi için banka ekstresi kanıtı gereklidir.\nMüşteri: O zaman ne yapacağım? Bana bir müşteri temsilcisi bağlayın. Bu botun bir faydası yok.",
+      "ground_truth_intent": "Ödeme",
+      "ground_truth_intent_detay": "Çifte çekim",
+      "ground_truth_tur": "Şikayet"
+    },
+    {
+      "sohbet_id": 90013,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişim hala hazırlanıyor görünüyor. Ne zaman kargoya verilir?\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 21345678\nBot: Kontrol ediyorum... Siparişiniz bugün kargoya verilecek. Takip numaranız e-posta adresinize gönderilecektir.\nMüşteri: Tamam, çok sağolun.\nBot: Rica ederim. İyi günler dileriz.",
+      "ground_truth_intent": "Kargo",
+      "ground_truth_intent_detay": "Kargo durumu",
+      "ground_truth_tur": "Soru"
+    },
+    {
+      "sohbet_id": 90014,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kredi kartım neden reddediliyor?\nBot: Kredi kartı reddedilme nedenlerini güvenlik ve gizlilik nedeniyle göremiyorum. Bu durumu bankanızla görüşmeniz en doğru seçenek olacaktır.\nMüşteri: Siz yardımcı olamayacaksanız neden buradasınız? Çok sinir bozucu bir durum.",
+      "ground_truth_intent": "Ödeme",
+      "ground_truth_intent_detay": "Kredi kartı reddedilmesi",
+      "ground_truth_tur": "Sorun"
+    },
+    {
+      "sohbet_id": 90015,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürün beden tablosunu bulamıyorum.\nBot: Hangi ürünü arıyorsunuz? Genellikle ürün sayfasında 'Beden Tablosu' başlığı altında bu bilgi yer alır.\nMüşteri: Tamam, buldum şimdi. Gözümden kaçmış.\nBot: Sevindim. Başka bir sorunuz olursa çekinmeyin.",
+      "ground_truth_intent": "Beden tablosu",
+      "ground_truth_intent_detay": "Ürün beden tablosu",
+      "ground_truth_tur": "Bilgi alma"
+    },
+    {
+      "sohbet_id": 90016,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Adresimi yanlış girdim, nasıl düzeltebilirim?\nBot: Siparişiniz kargoya verilmediyse, hesabım bölümünden sipariş detaylarına giderek adresinizi güncelleyebilirsiniz.\nMüşteri: Siparişimi dün verdim, kargoya verilmiş. O zaman ne olacak?\nBot: Bu durumda kargo firmasıyla iletişime geçmeniz gerekmektedir.\nMüşteri: Her şey için beni kargoya yönlendiriyorsunuz. Hiçbir işe yaramıyorsunuz.",
+      "ground_truth_intent": "Adres hatası",
+      "ground_truth_intent_detay": "Yanlış adres girişi",
+      "ground_truth_tur": "Sorun"
+    },
+    {
+      "sohbet_id": 90017,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürün yorumumu neden yayınlamadınız?\nBot: Yorumlar, içerik kurallarına uygunluk açısından incelenmektedir. Yorumunuzun kurallarımıza aykırı bir içeriği olabilir.\nMüşteri: Hangi kurala aykırı? Bana bir açıklama yapın. Çok sinirliyim.",
+      "ground_truth_intent": "Yorum",
+      "ground_truth_intent_detay": "Yorum yayınlanmaması",
+      "ground_truth_tur": "Şikayet"
+    },
+    {
+      "sohbet_id": 90018,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Sitede gezinirken sürekli hata alıyorum. '404 not found' diyor.\nBot: Yaşadığınız sorun için üzgünüz. Teknik ekibimiz bu hatayı en kısa sürede çözecektir.\nMüşteri: Anladım. Teşekkürler.\nBot: Yardımcı olabildiğime sevindim. İyi günler.",
+      "ground_truth_intent": "Web sitesi",
+      "ground_truth_intent_detay": "Teknik hata",
+      "ground_truth_tur": "Şikayet"
+    },
+    {
+      "sohbet_id": 90019,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Sipariş verdim ama hesabımdan para çekildi. Siparişlerim sayfasında görünmüyor.\nBot: Ödeme bilgilerinizle bir sorun olabilir. Lütfen bir süre bekleyin, işlem bankanız tarafından iade edilebilir.\nMüşteri: Yine mi bekleyeceğim? Bu ne kadar kötü bir sistem. Paramı geri istiyorum. Ne yapacağım şimdi?",
+      "ground_truth_intent": "Ödeme",
+      "ground_truth_intent_detay": "Hesaptan para çekilip siparişin oluşmaması",
+      "ground_truth_tur": "Sorun"
+    },
+    {
+      "sohbet_id": 90020,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürün hakkında bilgi almak istiyorum, kumaşı nedir?\nBot: Hangi ürünü merak ediyorsunuz? Genellikle ürün açıklamasında bu bilgi yer almaktadır.\nMüşteri: Tamam, kontrol ettim. Açıklamada yazıyormuş, teşekkür ederim.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_intent": "Ürün",
+      "ground_truth_intent_detay": "Ürün bilgisi",
+      "ground_truth_tur": "Bilgi alma"
+    },
+    {
+      "sohbet_id": 90021,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimde promosyon ürünleri eksik geldi. Ne yapabilirim?\nBot: Sipariş numaranızı ve eksik gelen promosyon ürünlerini paylaşır mısınız?\nMüşteri: 85472196. Eksik olanlar çanta ve cüzdan.\nBot: Eksik ürünleriniz en kısa sürede kargoya verilecektir. Yaşanan aksaklık için özür dileriz.\nMüşteri: Çok teşekkür ederim, hızlı çözüm için.\nBot: Rica ederim. Başka bir şey olursa buradayım.",
+      "ground_truth_intent": "Eksik ürün",
+      "ground_truth_intent_detay": "Eksik promosyon ürünleri",
+      "ground_truth_tur": "Şikayet"
+    },
+    {
+      "sohbet_id": 90022,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimi iptal ettim ama param hala iade edilmedi.\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 98745612\nBot: İadenizin bankanıza yansıma süresi 1-5 iş günüdür. Lütfen banka ekstrenizi kontrol edin.\nMüşteri: Siparişimi 1 hafta önce iptal ettim zaten! Çok iyi bir hizmet değil bu.",
+      "ground_truth_intent": "İade",
+      "ground_truth_intent_detay": "Para iadesi gecikmesi",
+      "ground_truth_tur": "Şikayet"
+    },
+    {
+      "sohbet_id": 90023,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürünümde hasar var, kargodan kaynaklı olduğunu düşünüyorum.\nBot: Sipariş numaranızı ve ürünün hasarlı fotoğrafını gönderir misiniz?\nMüşteri: 78965412. Fotoğrafı çektim, gönderiyorum.\nBot: Fotoğrafınız incelenmiştir. Hasarlı ürününüz en kısa sürede yenisiyle değiştirilecektir.\nMüşteri: Çok iyi, teşekkürler!\nBot: Rica ederim, iyi günler dileriz.",
+      "ground_truth_intent": "Hasarlı ürün",
+      "ground_truth_intent_detay": "Kargodan kaynaklı hasar",
+      "ground_truth_tur": "Şikayet"
+    },
+    {
+      "sohbet_id": 90024,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürünü denedim ve rengini beğenmedim, değişim yapmak istiyorum.\nBot: İade sürecini başlatarak istediğiniz renkteki ürünü yeniden sipariş edebilirsiniz.\nMüşteri: Değişim seçeneği yok mu? İade ve yeniden sipariş çok zahmetli. Çok kötü bir sistem.",
+      "ground_truth_intent": "Değişim",
+      "ground_truth_intent_detay": "Değişim seçeneği olmaması",
+      "ground_truth_tur": "Şikayet"
+    },
+    {
+      "sohbet_id": 90025,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: İndirim kampanyaları hakkında bilgi almak istiyorum.\nBot: Kampanyalarımız ana sayfamızda ve e-posta bültenimizde yer almaktadır. E-posta bültenimize üye olarak güncel kampanyalardan haberdar olabilirsiniz.\nMüşteri: Tamam, kontrol edeceğim. Teşekkürler.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_intent": "İndirim",
+      "ground_truth_intent_detay": "Kampanya bilgisi",
+      "ground_truth_tur": "Bilgi alma"
+    },
+    {
+      "sohbet_id": 90026,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Sipariş verdim ama yanlış ürün geldi.\nBot: Sipariş numaranızı ve yanlış gelen ürünün fotoğrafını paylaşır mısınız?\nMüşteri: 65432198. Fotoğrafı ekledim.\nBot: Kontrol ediyorum... Doğru ürününüz en kısa sürede adresinize gönderilecektir. Yanlış gelen ürünü kargo ile ücretsiz olarak iade edebilirsiniz.\nMüşteri: Çok iyi, teşekkür ederim.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_intent": "Yanlış ürün",
+      "ground_truth_intent_detay": "Yanlış ürün gönderimi",
+      "ground_truth_tur": "Şikayet"
+    },
+    {
+      "sohbet_id": 90027,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Hesabımı kapatmak istiyorum.\nBot: Hesabınızı Hesabım sayfasından 'Hesabımı Kapat' butonu ile kapatabilirsiniz.\nMüşteri: Anladım, teşekkürler.\nBot: Rica ederim. Başka bir şey olursa buradayım.",
+      "ground_truth_intent": "Hesap kapatma",
+      "ground_truth_intent_detay": "Hesap kapatma",
+      "ground_truth_tur": "İstek"
+    },
+    {
+      "sohbet_id": 90028,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimde bir ürün eksik geldi, ancak siparişi verdiğimde ürünün stokta olduğunu görüyordum.\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 987456321\nBot: Stok durumunu kontrol ettim. Ürününüz stokta bulunmuyor, bu nedenle siparişinize eklenememiş. En kısa sürede para iadesi yapılacaktır.\nMüşteri: O zaman neden ürünü sipariş verdirdiniz? İade istemiyorum, ürünü istiyorum. Çok kötü bir deneyim oldu.",
+      "ground_truth_intent": "Eksik ürün",
+      "ground_truth_intent_detay": "Stokta görünen ürünün eksik gelmesi",
+      "ground_truth_tur": "Şikayet"
+    },
+    {
+      "sohbet_id": 90029,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: İade sürecinde bir sorun çıktı, iade kodum geçersiz görünüyor.\nBot: Sipariş ve iade kodunuzu alabilir miyim?\nMüşteri: 456123789. İade kodu XYZ-1234.\nBot: İade kodunuzun süresi dolmuş olabilir. Sizin için yeni bir iade kodu oluşturdum: ABC-5678.\nMüşteri: Harika! Çok teşekkürler.\nBot: Rica ederim. Başka bir şey olursa yardımcı olmaktan mutluluk duyarım.",
+      "ground_truth_intent": "İade",
+      "ground_truth_intent_detay": "İade kodunun geçersiz olması",
+      "ground_truth_tur": "Sorun"
+    },
+    {
+      "sohbet_id": 90030,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimin teslimat adresi yanlış yazılmış, nasıl düzeltebilirim?\nBot: Siparişiniz henüz kargoya verilmediyse, hesabım bölümünden sipariş detaylarına giderek adresinizi güncelleyebilirsiniz.\nMüşteri: Sipariş vereli 10 dakika oldu, ne zaman kargoya verilir?\nBot: Siparişler genellikle 1 iş günü içinde kargoya verilir. Lütfen güncellemeyi yapın.\nMüşteri: Teşekkürler, çok yardımcı oldunuz.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_intent": "Adres hatası",
+      "ground_truth_intent_detay": "Yanlış teslimat adresi",
+      "ground_truth_tur": "Sorun"
+    },
+    {
+      "sohbet_id": 90031,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimin durumu hakkında bilgi almak istiyorum.\nBot: Sipariş numaranızı paylaşır mısınız?\nMüşteri: 54321678\nBot: Siparişiniz kargoya verilmiş ve yolda. Tahmini teslimat tarihi 3-4 gün içinde.\nMüşteri: Tamam, çok sağolun.\nBot: Rica ederim. Başka bir sorunuz olursa buradayım.",
+      "ground_truth_intent": "Sipariş",
+      "ground_truth_intent_detay": "Sipariş durumu",
+      "ground_truth_tur": "Soru"
+    },
+    {
+      "sohbet_id": 90032,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Sipariş verdim ama hesabımdan para çekilmedi.\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 34567890\nBot: Kontrol ettim, siparişiniz tamamlanmamış görünüyor. Lütfen tekrar deneyin.\nMüşteri: Tekrar denedim yine olmadı. Ne yapabilirim?",
+      "ground_truth_intent": "Ödeme",
+      "ground_truth_intent_detay": "Ödemenin tamamlanmaması",
+      "ground_truth_tur": "Sorun"
+    },
+    {
+      "sohbet_id": 90033,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürünü denemek için sipariş verdim, bedeni olmadı.\nBot: Bu durumda iade sürecini başlatabilirsiniz. Lütfen sipariş numaranızı girin.\nMüşteri: 12398765\nBot: İade kodunuz oluşturulmuştur. Kargoya ücretsiz olarak verebilirsiniz.\nMüşteri: Çok teşekkür ederim, çok hızlı oldu.\nBot: Rica ederim. Başka bir sorunuz olursa buradayım.",
+      "ground_truth_intent": "Beden",
+      "ground_truth_intent_detay": "Beden uyuşmazlığı",
+      "ground_truth_tur": "İade"
+    },
+    {
+      "sohbet_id": 90034,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kupon kodum neden çalışmıyor?\nBot: Kupon kodunuzun süresi dolmuş veya geçerli olduğu ürün ve sepet tutarı kriterlerini karşılamıyor olabilir.\nMüşteri: Kontrol ettim, her şey uygun görünüyor. Başka bir sebep olabilir mi?\nBot: Maalesef, sistemde kuponunuzla ilgili bir hata görünmüyor.\nMüşteri: O zaman ne yapacağım? Bir çözümünüz yok mu? Çok kötü bir hizmet.",
+      "ground_truth_intent": "Kupon",
+      "ground_truth_intent_detay": "Kupon kodunun çalışmaması",
+      "ground_truth_tur": "Sorun"
+    },
+    {
+      "sohbet_id": 90035,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kargom nerede kaldı? Takip numaram çalışmıyor.\nBot: Kargo takip numaranızı paylaşır mısınız?\nMüşteri: 1234567890\nBot: Kontrol ediyorum... Kargonuz henüz kargo firmasına teslim edilmemiş. Lütfen biraz bekleyin.\nMüşteri: Ne kadar bekleyeceğim? Bu durumdan hiç memnun kalmadım.",
+      "ground_truth_intent": "Kargo",
+      "ground_truth_intent_detay": "Kargonun gecikmesi",
+      "ground_truth_tur": "Soru"
+    },
+    {
+      "sohbet_id": 90036,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Müşteri temsilcisiyle görüşmek istiyorum.\nBot: Belirli bir konuda yardımcı olabilmem için sorununuzu yazabilir misiniz?\nMüşteri: Siparişimi iptal etmek istiyorum. Sipariş numarası: 87654321.\nBot: Siparişiniz kargoya verilmeden iptal edilmiştir. Başka bir şeye ihtiyacınız olursa buradayım.\nMüşteri: Teşekkür ederim.\nBot: Rica ederim.",
+      "ground_truth_intent": "İptal",
+      "ground_truth_intent_detay": "Sipariş iptali",
+      "ground_truth_tur": "İstek"
+    },
+    {
+      "sohbet_id": 90037,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürünümde bir hata var, tamir ettirmek istiyorum.\nBot: Hangi ürün olduğunu ve hatanın ne olduğunu belirtir misiniz?\nMüşteri: Kulaklık. Şarjı tutmuyor. Garanti kapsamında tamir ettirebilir miyim?\nBot: Ürününüzü teknik servisimize göndermeniz gerekmektedir. Adres ve gönderim detayları için e-posta adresinizi paylaşır mısınız?\nMüşteri: Tamam, teşekkürler.\nBot: Rica ederim. Sorunuz çözüldü mü?",
+      "ground_truth_intent": "Teknik sorun",
+      "ground_truth_intent_detay": "Garanti kapsamında tamir",
+      "ground_truth_tur": "Sorun"
+    },
+    {
+      "sohbet_id": 90038,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: E-posta bülteninizden çıkmak istiyorum.\nBot: Size gönderilen e-postaların en altında yer alan 'abonelikten çık' linkini kullanarak bu işlemi gerçekleştirebilirsiniz.\nMüşteri: Anladım. Teşekkürler.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_intent": "Abonelik",
+      "ground_truth_intent_detay": "E-posta aboneliği iptali",
+      "ground_truth_tur": "İstek"
+    },
+    {
+      "sohbet_id": 90039,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kargom 2 gün önce dağıtıma çıktı, neden hala gelmedi?\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 876543210\nBot: Kargo firmasıyla iletişime geçtik. Kargonuzda bir gecikme yaşanmış. Yarın gün içinde size teslim edilecektir.\nMüşteri: Tamam, teşekkürler. Artık yarın gelsin.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_intent": "Kargo",
+      "ground_truth_intent_detay": "Kargo gecikmesi",
+      "ground_truth_tur": "Sorun"
+    },
+    {
+      "sohbet_id": 90040,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: İade sürecim neden bu kadar uzun sürüyor? 10 gündür bekliyorum.\nBot: İade numaranızı paylaşır mısınız?\nMüşteri: 123456\nBot: İadeniz depomuza ulaşmış ancak inceleme aşamasında. Bu süreç bankaya yansımadan önce 1-3 iş günü sürebilir.\nMüşteri: 10 gündür bekliyorum. Bu ne demek? Artık yeter. Ne kadar kötü bir hizmet.",
+      "ground_truth_intent": "İade",
+      "ground_truth_intent_detay": "İade süreci gecikmesi",
+      "ground_truth_tur": "Şikayet"
+    }
+  ],
+  "resolution_data": [
+    {
+      "sohbet_id": 90001,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimde bir ürün eksik geldi. Ne yapmalıyım?\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 98765432\nBot: Kontrol ediyorum... Siparişinizde bir hata olduğunu görüyorum. Yeni ürününüz en kısa sürede gönderilecektir. Özür dileriz.\nMüşteri: Harika, teşekkür ederim!\nBot: Rica ederim, iyi günler dileriz.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 7
+    },
+    {
+      "sohbet_id": 90002,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Hesabıma giriş yapamıyorum, şifremi unuttum.\nBot: Şifre sıfırlama linki için e-posta adresinizi girer misiniz?\nMüşteri: Şifremi sıfırlama linki gelmiyor. Başka bir yol yok mu?\nBot: E-posta kutunuzun spam klasörünü kontrol ettiniz mi?\nMüşteri: Evet, kontrol ettim. Hiçbir yerde yok. Bu durum çok can sıkıcı.",
+      "ground_truth_resolution": "Çözülemedi",
+      "message_count": 6
+    },
+    {
+      "sohbet_id": 90003,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: İade süreci hakkında bilgi almak istiyorum.\nBot: İade sürecimiz 14 gündür. Ürünü orijinal paketiyle birlikte kargoya vermeniz yeterlidir. İade kodunuzu oluşturmak için sipariş numaranızı alabilir miyim?\nMüşteri: Anladım, teşekkürler.\nBot: Başka bir sorunuz olursa buradayım.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 5
+    },
+    {
+      "sohbet_id": 90004,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kupon kodum çalışmıyor. 'Hoş Geldin15' kuponunu kullanmak istiyorum ama hata veriyor.\nBot: Kuponunuzun geçerlilik koşullarını kontrol ettiniz mi? Örneğin, minimum sepet tutarı veya belirli ürünler için geçerli olup olmadığı gibi.\nMüşteri: Evet, her şeyi kontrol ettim. Sepetim de 200 TL üzerinde. Ne yapabilirim?\nBot: Sistemde kuponunuzla ilgili bir sorun görünmüyor. Lütfen farklı bir tarayıcıdan denemeyi veya önbelleğinizi temizlemeyi deneyin.\nMüşteri: Bunları zaten denedim! Sizinle konuşmak zaman kaybı oldu. Hiç yardımcı olmuyorsunuz.",
+      "ground_truth_resolution": "Çözülemedi",
+      "message_count": 6
+    },
+    {
+      "sohbet_id": 90005,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimi iptal etmek istiyorum.\nBot: Sipariş numaranızı paylaşır mısınız?\nMüşteri: 76458902\nBot: Siparişiniz başarılı bir şekilde iptal edilmiştir. İadeniz en kısa sürede gerçekleştirilecektir.\nMüşteri: Çok teşekkür ederim!\nBot: Rica ederim, iyi günler.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 7
+    },
+    {
+      "sohbet_id": 90006,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: İade kargom ne zaman ulaşır?\nBot: İade takip kodunuzu paylaşır mısınız?\nMüşteri: 654321987\nBot: Kontrol ediyorum... İadeniz 2 gün içinde elimize ulaşacaktır.\nMüşteri: Tamam, teşekkür ederim.\nBot: Rica ederim, iyi günler dileriz.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 7
+    },
+    {
+      "sohbet_id": 90007,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürünüm defolu geldi. Değişim veya iade yapmak istiyorum.\nBot: Bu konuda size yardımcı olabilirim. Lütfen sipariş numaranızı ve ürünün defolu kısmının fotoğrafını gönderin.\nMüşteri: Telefonumdan fotoğraf çekemiyorum, başka bir yol yok mu?\nBot: Maalesef, defolu ürün işlemleri için fotoğraf kanıtı gerekmektedir.\nMüşteri: Bu çok saçma! O zaman iade de yapamayacak mıyım?",
+      "ground_truth_resolution": "Çözülemedi",
+      "message_count": 6
+    },
+    {
+      "sohbet_id": 90008,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Üyelik bilgilerimi güncellemek istiyorum.\nBot: Hesabım sayfasından 'Bilgilerimi Düzenle' seçeneği ile bu işlemi gerçekleştirebilirsiniz. Eğer sorun yaşarsanız, tekrar bana yazın.\nMüşteri: Teşekkür ederim, deneyeceğim.\nBot: Rica ederim. Başka bir şeye ihtiyacınız olursa buradayım.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 5
+    },
+    {
+      "sohbet_id": 90009,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Faturamda bir yanlışlık var. Fiyatlar hatalı görünüyor.\nBot: Sipariş numaranızı ve faturadaki hatalı fiyat bilgisini paylaşır mısınız?\nMüşteri: Sipariş numarası 54897213. Fatura detayları ekte.\nBot: Kontrol ediyorum... Faturanızdaki hatayı düzelterek yeni faturayı size e-posta ile göndereceğim. Sorun için özür dileriz.\nMüşteri: Çok teşekkürler, çok iyi oldu bu.\nBot: Rica ederim, başka bir konuda yardımcı olmamı ister misiniz?",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 7
+    },
+    {
+      "sohbet_id": 90010,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimi iptal etmek istiyorum ama sistemde 'iptal et' butonu görünmüyor.\nBot: Siparişiniz kargoya verildiği için 'iptal et' butonu görünmüyor olabilir. Bu durumda iade süreciyle devam etmeniz gerekir.\nMüşteri: Ama siparişim daha yeni kargoya verildi. İptal edebilmem gerekirdi. Çok kötü bir hizmet.",
+      "ground_truth_resolution": "Çözülemedi",
+      "message_count": 4
+    },
+    {
+      "sohbet_id": 90011,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürün stok bilgisi hakkında bilgi almak istiyorum. Stokta yok görünüyor ama ne zaman gelir?\nBot: Ürün kodunu veya adını paylaşır mısınız?\nMüşteri: Elbise kodu: AB-456.\nBot: Maalesef, bu ürün için henüz bir stok yenileme tarihi belirlenmedi.\nMüşteri: Anladım. Teşekkürler yine de.\nBot: Rica ederim.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 7
+    },
+    {
+      "sohbet_id": 90012,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kredi kartımdan iki kez çekim yapılmış.\nBot: Sipariş numaranızı ve banka ekstrenizin ekran görüntüsünü paylaşır mısınız?\nMüşteri: Banka ekstresini çekemedim, telefonda uygulamam çalışmıyor.\nBot: Maalesef, iki kez çekim işlemi için banka ekstresi kanıtı gereklidir.\nMüşteri: O zaman ne yapacağım? Bana bir müşteri temsilcisi bağlayın. Bu botun bir faydası yok.",
+      "ground_truth_resolution": "Çözülemedi",
+      "message_count": 6
+    },
+    {
+      "sohbet_id": 90013,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişim hala hazırlanıyor görünüyor. Ne zaman kargoya verilir?\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 21345678\nBot: Kontrol ediyorum... Siparişiniz bugün kargoya verilecek. Takip numaranız e-posta adresinize gönderilecektir.\nMüşteri: Tamam, çok sağolun.\nBot: Rica ederim. İyi günler dileriz.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 7
+    },
+    {
+      "sohbet_id": 90014,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kredi kartım neden reddediliyor?\nBot: Kredi kartı reddedilme nedenlerini güvenlik ve gizlilik nedeniyle göremiyorum. Bu durumu bankanızla görüşmeniz en doğru seçenek olacaktır.\nMüşteri: Siz yardımcı olamayacaksanız neden buradasınız? Çok sinir bozucu bir durum.",
+      "ground_truth_resolution": "Çözülemedi",
+      "message_count": 4
+    },
+    {
+      "sohbet_id": 90015,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürün beden tablosunu bulamıyorum.\nBot: Hangi ürünü arıyorsunuz? Genellikle ürün sayfasında 'Beden Tablosu' başlığı altında bu bilgi yer alır.\nMüşteri: Tamam, buldum şimdi. Gözümden kaçmış.\nBot: Sevindim. Başka bir sorunuz olursa çekinmeyin.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 5
+    },
+    {
+      "sohbet_id": 90016,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Adresimi yanlış girdim, nasıl düzeltebilirim?\nBot: Siparişiniz kargoya verilmediyse, hesabım bölümünden sipariş detaylarına giderek adresinizi güncelleyebilirsiniz.\nMüşteri: Siparişimi dün verdim, kargoya verilmiş. O zaman ne olacak?\nBot: Bu durumda kargo firmasıyla iletişime geçmeniz gerekmektedir.\nMüşteri: Her şey için beni kargoya yönlendiriyorsunuz. Hiçbir işe yaramıyorsunuz.",
+      "ground_truth_resolution": "Çözülemedi",
+      "message_count": 6
+    },
+    {
+      "sohbet_id": 90017,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürün yorumumu neden yayınlamadınız?\nBot: Yorumlar, içerik kurallarına uygunluk açısından incelenmektedir. Yorumunuzun kurallarımıza aykırı bir içeriği olabilir.\nMüşteri: Hangi kurala aykırı? Bana bir açıklama yapın. Çok sinirliyim.",
+      "ground_truth_resolution": "Çözülemedi",
+      "message_count": 4
+    },
+    {
+      "sohbet_id": 90018,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Sitede gezinirken sürekli hata alıyorum. '404 not found' diyor.\nBot: Yaşadığınız sorun için üzgünüz. Teknik ekibimiz bu hatayı en kısa sürede çözecektir.\nMüşteri: Anladım. Teşekkürler.\nBot: Yardımcı olabildiğime sevindim. İyi günler.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 5
+    },
+    {
+      "sohbet_id": 90019,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Sipariş verdim ama hesabımdan para çekildi. Siparişlerim sayfasında görünmüyor.\nBot: Ödeme bilgilerinizle bir sorun olabilir. Lütfen bir süre bekleyin, işlem bankanız tarafından iade edilebilir.\nMüşteri: Yine mi bekleyeceğim? Bu ne kadar kötü bir sistem. Paramı geri istiyorum. Ne yapacağım şimdi?",
+      "ground_truth_resolution": "Çözülemedi",
+      "message_count": 4
+    },
+    {
+      "sohbet_id": 90020,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürün hakkında bilgi almak istiyorum, kumaşı nedir?\nBot: Hangi ürünü merak ediyorsunuz? Genellikle ürün açıklamasında bu bilgi yer almaktadır.\nMüşteri: Tamam, kontrol ettim. Açıklamada yazıyormuş, teşekkür ederim.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 5
+    },
+    {
+      "sohbet_id": 90021,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimde promosyon ürünleri eksik geldi. Ne yapabilirim?\nBot: Sipariş numaranızı ve eksik gelen promosyon ürünlerini paylaşır mısınız?\nMüşteri: 85472196. Eksik olanlar çanta ve cüzdan.\nBot: Eksik ürünleriniz en kısa sürede kargoya verilecektir. Yaşanan aksaklık için özür dileriz.\nMüşteri: Çok teşekkür ederim, hızlı çözüm için.\nBot: Rica ederim. Başka bir şey olursa buradayım.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 7
+    },
+    {
+      "sohbet_id": 90022,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimi iptal ettim ama param hala iade edilmedi.\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 98745612\nBot: İadenizin bankanıza yansıma süresi 1-5 iş günüdür. Lütfen banka ekstrenizi kontrol edin.\nMüşteri: Siparişimi 1 hafta önce iptal ettim zaten! Çok iyi bir hizmet değil bu.",
+      "ground_truth_resolution": "Çözülemedi",
+      "message_count": 6
+    },
+    {
+      "sohbet_id": 90023,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürünümde hasar var, kargodan kaynaklı olduğunu düşünüyorum.\nBot: Sipariş numaranızı ve ürünün hasarlı fotoğrafını gönderir misiniz?\nMüşteri: 78965412. Fotoğrafı çektim, gönderiyorum.\nBot: Fotoğrafınız incelenmiştir. Hasarlı ürününüz en kısa sürede yenisiyle değiştirilecektir.\nMüşteri: Çok iyi, teşekkürler!\nBot: Rica ederim, iyi günler dileriz.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 7
+    },
+    {
+      "sohbet_id": 90024,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürünü denedim ve rengini beğenmedim, değişim yapmak istiyorum.\nBot: İade sürecini başlatarak istediğiniz renkteki ürünü yeniden sipariş edebilirsiniz.\nMüşteri: Değişim seçeneği yok mu? İade ve yeniden sipariş çok zahmetli. Çok kötü bir sistem.",
+      "ground_truth_resolution": "Çözülemedi",
+      "message_count": 4
+    },
+    {
+      "sohbet_id": 90025,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: İndirim kampanyaları hakkında bilgi almak istiyorum.\nBot: Kampanyalarımız ana sayfamızda ve e-posta bültenimizde yer almaktadır. E-posta bültenimize üye olarak güncel kampanyalardan haberdar olabilirsiniz.\nMüşteri: Tamam, kontrol edeceğim. Teşekkürler.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 5
+    },
+    {
+      "sohbet_id": 90026,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Sipariş verdim ama yanlış ürün geldi.\nBot: Sipariş numaranızı ve yanlış gelen ürünün fotoğrafını paylaşır mısınız?\nMüşteri: 65432198. Fotoğrafı ekledim.\nBot: Kontrol ediyorum... Doğru ürününüz en kısa sürede adresinize gönderilecektir. Yanlış gelen ürünü kargo ile ücretsiz olarak iade edebilirsiniz.\nMüşteri: Çok iyi, teşekkür ederim.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 7
+    },
+    {
+      "sohbet_id": 90027,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Hesabımı kapatmak istiyorum.\nBot: Hesabınızı Hesabım sayfasından 'Hesabımı Kapat' butonu ile kapatabilirsiniz.\nMüşteri: Anladım, teşekkürler.\nBot: Rica ederim. Başka bir şey olursa buradayım.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 5
+    },
+    {
+      "sohbet_id": 90028,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimde bir ürün eksik geldi, ancak siparişi verdiğimde ürünün stokta olduğunu görüyordum.\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 987456321\nBot: Stok durumunu kontrol ettim. Ürününüz stokta bulunmuyor, bu nedenle siparişinize eklenememiş. En kısa sürede para iadesi yapılacaktır.\nMüşteri: O zaman neden ürünü sipariş verdirdiniz? İade istemiyorum, ürünü istiyorum. Çok kötü bir deneyim oldu.",
+      "ground_truth_resolution": "Çözülemedi",
+      "message_count": 6
+    },
+    {
+      "sohbet_id": 90029,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: İade sürecinde bir sorun çıktı, iade kodum geçersiz görünüyor.\nBot: Sipariş ve iade kodunuzu alabilir miyim?\nMüşteri: 456123789. İade kodu XYZ-1234.\nBot: İade kodunuzun süresi dolmuş olabilir. Sizin için yeni bir iade kodu oluşturdum: ABC-5678.\nMüşteri: Harika! Çok teşekkürler.\nBot: Rica ederim. Başka bir şey olursa yardımcı olmaktan mutluluk duyarım.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 7
+    },
+    {
+      "sohbet_id": 90030,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimin teslimat adresi yanlış yazılmış, nasıl düzeltebilirim?\nBot: Siparişiniz henüz kargoya verilmediyse, hesabım bölümünden sipariş detaylarına giderek adresinizi güncelleyebilirsiniz.\nMüşteri: Sipariş vereli 10 dakika oldu, ne zaman kargoya verilir?\nBot: Siparişler genellikle 1 iş günü içinde kargoya verilir. Lütfen güncellemeyi yapın.\nMüşteri: Teşekkürler, çok yardımcı oldunuz.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 7
+    },
+    {
+      "sohbet_id": 90031,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Siparişimin durumu hakkında bilgi almak istiyorum.\nBot: Sipariş numaranızı paylaşır mısınız?\nMüşteri: 54321678\nBot: Siparişiniz kargoya verilmiş ve yolda. Tahmini teslimat tarihi 3-4 gün içinde.\nMüşteri: Tamam, çok sağolun.\nBot: Rica ederim. Başka bir sorunuz olursa buradayım.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 7
+    },
+    {
+      "sohbet_id": 90032,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Sipariş verdim ama hesabımdan para çekilmedi.\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 34567890\nBot: Kontrol ettim, siparişiniz tamamlanmamış görünüyor. Lütfen tekrar deneyin.\nMüşteri: Tekrar denedim yine olmadı. Ne yapabilirim?",
+      "ground_truth_resolution": "Çözülemedi",
+      "message_count": 6
+    },
+    {
+      "sohbet_id": 90033,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürünü denemek için sipariş verdim, bedeni olmadı.\nBot: Bu durumda iade sürecini başlatabilirsiniz. Lütfen sipariş numaranızı girin.\nMüşteri: 12398765\nBot: İade kodunuz oluşturulmuştur. Kargoya ücretsiz olarak verebilirsiniz.\nMüşteri: Çok teşekkür ederim, çok hızlı oldu.\nBot: Rica ederim. Başka bir sorunuz olursa buradayım.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 7
+    },
+    {
+      "sohbet_id": 90034,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kupon kodum neden çalışmıyor?\nBot: Kupon kodunuzun süresi dolmuş veya geçerli olduğu ürün ve sepet tutarı kriterlerini karşılamıyor olabilir.\nMüşteri: Kontrol ettim, her şey uygun görünüyor. Başka bir sebep olabilir mi?\nBot: Maalesef, sistemde kuponunuzla ilgili bir hata görünmüyor.\nMüşteri: O zaman ne yapacağım? Bir çözümünüz yok mu? Çok kötü bir hizmet.",
+      "ground_truth_resolution": "Çözülemedi",
+      "message_count": 6
+    },
+    {
+      "sohbet_id": 90035,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kargom nerede kaldı? Takip numaram çalışmıyor.\nBot: Kargo takip numaranızı paylaşır mısınız?\nMüşteri: 1234567890\nBot: Kontrol ediyorum... Kargonuz henüz kargo firmasına teslim edilmemiş. Lütfen biraz bekleyin.\nMüşteri: Ne kadar bekleyeceğim? Bu durumdan hiç memnun kalmadım.",
+      "ground_truth_resolution": "Çözülemedi",
+      "message_count": 6
+    },
+    {
+      "sohbet_id": 90036,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Müşteri temsilcisiyle görüşmek istiyorum.\nBot: Belirli bir konuda yardımcı olabilmem için sorununuzu yazabilir misiniz?\nMüşteri: Siparişimi iptal etmek istiyorum. Sipariş numarası: 87654321.\nBot: Siparişiniz kargoya verilmeden iptal edilmiştir. Başka bir şeye ihtiyacınız olursa buradayım.\nMüşteri: Teşekkür ederim.\nBot: Rica ederim.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 7
+    },
+    {
+      "sohbet_id": 90037,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Ürünümde bir hata var, tamir ettirmek istiyorum.\nBot: Hangi ürün olduğunu ve hatanın ne olduğunu belirtir misiniz?\nMüşteri: Kulaklık. Şarjı tutmuyor. Garanti kapsamında tamir ettirebilir miyim?\nBot: Ürününüzü teknik servisimize göndermeniz gerekmektedir. Adres ve gönderim detayları için e-posta adresinizi paylaşır mısınız?\nMüşteri: Tamam, teşekkürler.\nBot: Rica ederim. Sorunuz çözüldü mü?",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 7
+    },
+    {
+      "sohbet_id": 90038,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: E-posta bülteninizden çıkmak istiyorum.\nBot: Size gönderilen e-postaların en altında yer alan 'abonelikten çık' linkini kullanarak bu işlemi gerçekleştirebilirsiniz.\nMüşteri: Anladım. Teşekkürler.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 5
+    },
+    {
+      "sohbet_id": 90039,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: Kargom 2 gün önce dağıtıma çıktı, neden hala gelmedi?\nBot: Sipariş numaranızı alabilir miyim?\nMüşteri: 876543210\nBot: Kargo firmasıyla iletişime geçtik. Kargonuzda bir gecikme yaşanmış. Yarın gün içinde size teslim edilecektir.\nMüşteri: Tamam, teşekkürler. Artık yarın gelsin.\nBot: Rica ederim, iyi günler.",
+      "ground_truth_resolution": "Çözüldü",
+      "message_count": 7
+    },
+    {
+      "sohbet_id": 90040,
+      "conversation": "Bot: Merhaba! Ben AI Asistan. Size nasıl yardımcı olabilirim?\nMüşteri: İade sürecim neden bu kadar uzun sürüyor? 10 gündür bekliyorum.\nBot: İade numaranızı paylaşır mısınız?\nMüşteri: 123456\nBot: İadeniz depomuza ulaşmış ancak inceleme aşamasında. Bu süreç bankaya yansımadan önce 1-3 iş günü sürebilir.\nMüşteri: 10 gündür bekliyorum. Bu ne demek? Artık yeter. Ne kadar kötü bir hizmet.",
+      "ground_truth_resolution": "Çözülemedi",
+      "message_count": 6
+    }
+  ]
+}
