@@ -211,7 +211,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Author**: Yusuf Sakır
 - **Email**: your.email@example.com
 - **LinkedIn**: [Your LinkedIn Profile]
-- **GitHub**: [@yusufsakir1](https://github.com/yusufsakir1)
+- **GitHub**: [@yusufsakirr1](https://github.com/yusufsakirr1)
 
 ## 🙏 Acknowledgments
 
