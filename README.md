@@ -57,7 +57,7 @@ This project evaluates Large Language Model performance across three critical cu
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yusufsakir1/trendyol-milla-customer-service-llm-accuracy-analysis.git
+   git clone https://github.com/yusufsakirr1/trendyol-milla-customer-service-llm-accuracy-analysis.git
    cd trendyol-milla-customer-service-llm-accuracy-analysis
    ```
 
@@ -208,9 +208,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Author**: Yusuf Sakır
-- **Email**: your.email@example.com
-- **LinkedIn**: [Your LinkedIn Profile]
+- **Author**: Yusuf Sakir
+- **Email**: sakiryusuf36@gmail.com
+- **LinkedIn**: www.linkedin.com/in/yusuf-sakir
 - **GitHub**: [@yusufsakirr1](https://github.com/yusufsakirr1)
 
 ## 🙏 Acknowledgments
