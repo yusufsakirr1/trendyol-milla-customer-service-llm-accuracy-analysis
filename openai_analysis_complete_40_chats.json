@@ -1,0 +1,1033 @@
+{
+  "timestamp": "2025-09-17T15:59:41.422800",
+  "model_used": "gpt-5-nano",
+  "method": "structured_json_schema_pydantic",
+  "total_chats_analyzed": 40,
+  "sentiment_analysis": {
+    "results": [
+      {
+        "chat_id": "90001",
+        "predicted_sentiment": "Pozitif",
+        "explanation": "Kullanıcı eksik ürün bildirdi ve sorun çözüldü; müşteri teşekkür etti → olumlu sonuç.",
+        "raw_response": "{'sentiment': 'Pozitif', 'explanation': 'Kullanıcı eksik ürün bildirdi ve sorun çözüldü; müşteri teşekkür etti → olumlu sonuç.'}",
+        "ground_truth": "Pozitif"
+      },
+      {
+        "chat_id": "90002",
+        "predicted_sentiment": "Negatif",
+        "explanation": "Müşteri hesabına giriş yapamıyor ve şifresini unuttu. Şifre sıfırlama linki gelmiyor; spam klasörünü kontrol etti ancak sorun çözülmemiş durumda. 'Bu durum çok can sıkıcı' ifadesiyle memnuniyetsizliğini dile getiriyor. Bu durumda negatif sentiment.",
+        "raw_response": "{'sentiment': 'Negatif', 'explanation': \"Müşteri hesabına giriş yapamıyor ve şifresini unuttu. Şifre sıfırlama linki gelmiyor; spam klasörünü kontrol etti ancak sorun çözülmemiş durumda. 'Bu durum çok can sıkıcı' ifadesiyle memnuniyetsizliğini dile getiriyor. Bu durumda negatif sentiment.\"}",
+        "ground_truth": "Negatif"
+      },
+      {
+        "chat_id": "90003",
+        "predicted_sentiment": "Nötr",
+        "explanation": "Müşteri iade süreci hakkında bilgi talep etti ve bilgi alındı; teşekkür etti ancak sorun çözümü ya da memnuniyet ifadesi yok. Sadece bilgi paylaşımı ve rutin bir soru-cevap oldu.",
+        "raw_response": "{'sentiment': 'Nötr', 'explanation': 'Müşteri iade süreci hakkında bilgi talep etti ve bilgi alındı; teşekkür etti ancak sorun çözümü ya da memnuniyet ifadesi yok. Sadece bilgi paylaşımı ve rutin bir soru-cevap oldu.'}",
+        "ground_truth": "Nötr"
+      },
+      {
+        "chat_id": "90004",
+        "predicted_sentiment": "Negatif",
+        "explanation": "Müşteri kuponun çalışmaması nedeniyle öfke/hayal kırıklığı ifade ediyor. Çözüm sağlanamadı ve müşteri hizmetini eleştiriyor ('Hiç yardımcı olmuyorsunuz'), zaman kaybı olduğundan durum negatif olarak değerlendiriliyor.",
+        "raw_response": "{'sentiment': 'Negatif', 'explanation': \"Müşteri kuponun çalışmaması nedeniyle öfke/hayal kırıklığı ifade ediyor. Çözüm sağlanamadı ve müşteri hizmetini eleştiriyor ('Hiç yardımcı olmuyorsunuz'), zaman kaybı olduğundan durum negatif olarak değerlendiriliyor.\"}",
+        "ground_truth": "Negatif"
+      },
+      {
+        "chat_id": "90005",
+        "predicted_sentiment": "Pozitif",
+        "explanation": "Müşteri siparişini iptal ettirmek istedi ve sorun çözüldü; iade süreci başlatılacak olarak bilgilendirildi. Müşteri memnuniyetini gösteren teşekkür etti, bu nedenle pozitif sentiment.",
+        "raw_response": "{'sentiment': 'Pozitif', 'explanation': 'Müşteri siparişini iptal ettirmek istedi ve sorun çözüldü; iade süreci başlatılacak olarak bilgilendirildi. Müşteri memnuniyetini gösteren teşekkür etti, bu nedenle pozitif sentiment.'}",
+        "ground_truth": "Pozitif"
+      },
+      {
+        "chat_id": "90006",
+        "predicted_sentiment": "Pozitif",
+        "explanation": "İade kargosu için bilgi verildi (2 gün içinde ulaşacağı belirtildi) ve sorun çözüldü; kullanıcı teşekkür etti. Bu nedenle memnuniyet içeren pozitif bir geri bildirim olarak değerlendirildi.",
+        "raw_response": "{'sentiment': 'Pozitif', 'explanation': 'İade kargosu için bilgi verildi (2 gün içinde ulaşacağı belirtildi) ve sorun çözüldü; kullanıcı teşekkür etti. Bu nedenle memnuniyet içeren pozitif bir geri bildirim olarak değerlendirildi.'}",
+        "ground_truth": "Nötr"
+      },
+      {
+        "chat_id": "90007",
+        "predicted_sentiment": "Negatif",
+        "explanation": "Müşteri defolu ürün nedeniyle değişim/iade talep ediyor ancak fotoğraf kanıtı gerekliliğinden dolayı sürecin kendisine uygun olmadığını belirtiyor ve 'Bu çok saçma!' diyerek hayal kırıklığını ifade ediyor. Sorun şu an çözülmedi ve müşteri memnuniyetsiz.",
+        "raw_response": "{'sentiment': 'Negatif', 'explanation': \"Müşteri defolu ürün nedeniyle değişim/iade talep ediyor ancak fotoğraf kanıtı gerekliliğinden dolayı sürecin kendisine uygun olmadığını belirtiyor ve 'Bu çok saçma!' diyerek hayal kırıklığını ifade ediyor. Sorun şu an çözülmedi ve müşteri memnuniyetsiz.\"}",
+        "ground_truth": "Negatif"
+      },
+      {
+        "chat_id": "90008",
+        "predicted_sentiment": "Nötr",
+        "explanation": "Kullanıcı üyelik bilgilerini güncelleme konusunda bilgi aldı ve teşekkür etti. Ancak sorun çözümü veya memnuniyet ifadesi içermiyor; yalnızca bilgi paylaşımı yönlendirmesiyle devam eden rutin bir etkileşim.",
+        "raw_response": "{'sentiment': 'Nötr', 'explanation': 'Kullanıcı üyelik bilgilerini güncelleme konusunda bilgi aldı ve teşekkür etti. Ancak sorun çözümü veya memnuniyet ifadesi içermiyor; yalnızca bilgi paylaşımı yönlendirmesiyle devam eden rutin bir etkileşim.'}",
+        "ground_truth": "Nötr"
+      },
+      {
+        "chat_id": "90009",
+        "predicted_sentiment": "Pozitif",
+        "explanation": "Müşteri faturadaki hatayı bildirdi; bot hatayı düzelterek yeni faturayı göndereceğini söyledi ve özür diledi. Sonrasında müşteri 'Çok teşekkürler, çok iyi oldu bu.' diyerek memnuniyet ifade etti. Sorun çözüldü ve olumlu geri bildirim verildi.",
+        "raw_response": "{'sentiment': 'Pozitif', 'explanation': \"Müşteri faturadaki hatayı bildirdi; bot hatayı düzelterek yeni faturayı göndereceğini söyledi ve özür diledi. Sonrasında müşteri 'Çok teşekkürler, çok iyi oldu bu.' diyerek memnuniyet ifade etti. Sorun çözüldü ve olumlu geri bildirim verildi.\"}",
+        "ground_truth": "Pozitif"
+      },
+      {
+        "chat_id": "90010",
+        "predicted_sentiment": "Negatif",
+        "explanation": "Müşteri, siparişini iptal etmek istiyor fakat sistemde iptal butonu yok ve çözüm olarak iade sürecine yönlendiriliyor; sipariş kargoya verildiği için iptal mümkün değil ve müşteri çözüm bulamamış durumda. Sonuç olarak, hizmeti 'çok kötü bir hizmet' şeklinde eleştiriyor; sorun çözülmüş gibi görünmüyor. Bu nedenle negatif sentiment.",
+        "raw_response": "{'sentiment': 'Negatif', 'explanation': \"Müşteri, siparişini iptal etmek istiyor fakat sistemde iptal butonu yok ve çözüm olarak iade sürecine yönlendiriliyor; sipariş kargoya verildiği için iptal mümkün değil ve müşteri çözüm bulamamış durumda. Sonuç olarak, hizmeti 'çok kötü bir hizmet' şeklinde eleştiriyor; sorun çözülmüş gibi görünmüyor. Bu nedenle negatif sentiment.\"}",
+        "ground_truth": "Negatif"
+      },
+      {
+        "chat_id": "90011",
+        "predicted_sentiment": "Nötr",
+        "explanation": "Müşteri stok durumu hakkında bilgi talep etti; stokta görünmüyor ve gelecek için net bir tarih verilmedi. Bilgi alındı ve müşteri teşekkür etti, ancak sorun çözülmedi ve memnuniyet ifadeleri yalnızca bilgi alma durumuyla sınırlı. Bu nedenle durum Nötr.",
+        "raw_response": "{'sentiment': 'Nötr', 'explanation': 'Müşteri stok durumu hakkında bilgi talep etti; stokta görünmüyor ve gelecek için net bir tarih verilmedi. Bilgi alındı ve müşteri teşekkür etti, ancak sorun çözülmedi ve memnuniyet ifadeleri yalnızca bilgi alma durumuyla sınırlı. Bu nedenle durum Nötr.'}",
+        "ground_truth": "Nötr"
+      },
+      {
+        "chat_id": "90012",
+        "predicted_sentiment": "Negatif",
+        "explanation": "Müşteri iki kez çekime ilişkin sorunu bildiriyor ve banka ekstresi veremediği için çözüm bulunmuyor. Uygulama çalışmıyor, müşteri botun faydasız olduğunu belirtiyor ve müşteri temsilcisi talep ediyor; bu, öfke/hayat kırıklığı içerir ve sorun çözüldüğü gözükmüyor. Bu durumda Negatif olarak sınıflandırılır.",
+        "raw_response": "{'sentiment': 'Negatif', 'explanation': 'Müşteri iki kez çekime ilişkin sorunu bildiriyor ve banka ekstresi veremediği için çözüm bulunmuyor. Uygulama çalışmıyor, müşteri botun faydasız olduğunu belirtiyor ve müşteri temsilcisi talep ediyor; bu, öfke/hayat kırıklığı içerir ve sorun çözüldüğü gözükmüyor. Bu durumda Negatif olarak sınıflandırılır.'}",
+        "ground_truth": "Negatif"
+      },
+      {
+        "chat_id": "90013",
+        "predicted_sentiment": "Pozitif",
+        "explanation": "Müşteri siparişinin hazırlanıyor olmasıyla ilgili sorun bildirdi; bot bugün kargoya verileceğini söyledi ve takip numarası gelecekti. Sonuç olarak sorun çözüldü ve müşteri teşekkür etti ('Tamam, çok sağolun').",
+        "raw_response": "{'sentiment': 'Pozitif', 'explanation': \"Müşteri siparişinin hazırlanıyor olmasıyla ilgili sorun bildirdi; bot bugün kargoya verileceğini söyledi ve takip numarası gelecekti. Sonuç olarak sorun çözüldü ve müşteri teşekkür etti ('Tamam, çok sağolun').\"}",
+        "ground_truth": "Nötr"
+      },
+      {
+        "chat_id": "90014",
+        "predicted_sentiment": "Negatif",
+        "explanation": "Müşteri kredi kartı reddi nedeniyle yardım talep ediyor ve bot bu konuda çözüm sunamıyor. Son mesajda müşteri, 'Çok sinir bozucu bir durum' diyerek hizmete yönelik memnuniyetsizliğini ifade ediyor ve sorun çözülmedi. Bu nedenle sentiment negatif olarak değerlendiriliyor.",
+        "raw_response": "{'sentiment': 'Negatif', 'explanation': \"Müşteri kredi kartı reddi nedeniyle yardım talep ediyor ve bot bu konuda çözüm sunamıyor. Son mesajda müşteri, 'Çok sinir bozucu bir durum' diyerek hizmete yönelik memnuniyetsizliğini ifade ediyor ve sorun çözülmedi. Bu nedenle sentiment negatif olarak değerlendiriliyor.\"}",
+        "ground_truth": "Negatif"
+      },
+      {
+        "chat_id": "90015",
+        "predicted_sentiment": "Nötr",
+        "explanation": "Müşteri 'Ürün beden tablosunu bulamıyorum' şeklinde bilgi talep etti, sorununu bildiridi. Sonuçta müşteri kendi başına buldu ve teşekkür ya da memnuniyet ifadesi göstermedi. İçerik bilgi edinme ve rutin yönlendirmeyle ilerledi; herhangi bir olumlu ya da olumsuz duygu ifadisi bulunmuyor. Bu yüzden sentiment Nötr.",
+        "raw_response": "{'sentiment': 'Nötr', 'explanation': \"Müşteri 'Ürün beden tablosunu bulamıyorum' şeklinde bilgi talep etti, sorununu bildiridi. Sonuçta müşteri kendi başına buldu ve teşekkür ya da memnuniyet ifadesi göstermedi. İçerik bilgi edinme ve rutin yönlendirmeyle ilerledi; herhangi bir olumlu ya da olumsuz duygu ifadisi bulunmuyor. Bu yüzden sentiment Nötr.\"}",
+        "ground_truth": "Nötr"
+      },
+      {
+        "chat_id": "90016",
+        "predicted_sentiment": "Negatif",
+        "explanation": "Müşteri adres güncellemesiyle ilgili çözüm beklerken siparişin kargoya verildiğini öğrendi ve süreçle ilgili tatminsizlik ifade etti. Son mesajında 'Hiçbir işe yarıyorsunuz' ve 'beni kargoya yönlendiriyorsunuz' gibi eleştirel ifadeler kullanıldı; sorun çözülmedi ve müşteri memnuniyetsizliğini belirtti. Bu nedenle Negatif.",
+        "raw_response": "{'sentiment': 'Negatif', 'explanation': \"Müşteri adres güncellemesiyle ilgili çözüm beklerken siparişin kargoya verildiğini öğrendi ve süreçle ilgili tatminsizlik ifade etti. Son mesajında 'Hiçbir işe yarıyorsunuz' ve 'beni kargoya yönlendiriyorsunuz' gibi eleştirel ifadeler kullanıldı; sorun çözülmedi ve müşteri memnuniyetsizliğini belirtti. Bu nedenle Negatif.\"}",
+        "ground_truth": "Negatif"
+      },
+      {
+        "chat_id": "90017",
+        "predicted_sentiment": "Negatif",
+        "explanation": "Müşteri 'Çok sinirliyim' diyerek açıkça öfke ve hayal kırıklığı ifade ediyor. Yorumunun neden yayınlanmadığına dair açıklama talep ediyor; şu anda sorun çözülmüş görünmüyor ve müşteri memnuniyetsiz. Bu durumda olumsuz bir sentiment olarak sınıflandırılır.",
+        "raw_response": "{'sentiment': 'Negatif', 'explanation': \"Müşteri 'Çok sinirliyim' diyerek açıkça öfke ve hayal kırıklığı ifade ediyor. Yorumunun neden yayınlanmadığına dair açıklama talep ediyor; şu anda sorun çözülmüş görünmüyor ve müşteri memnuniyetsiz. Bu durumda olumsuz bir sentiment olarak sınıflandırılır.\"}",
+        "ground_truth": "Negatif"
+      },
+      {
+        "chat_id": "90018",
+        "predicted_sentiment": "Nötr",
+        "explanation": "Müşteri hata bildirdi ve çözüm henüz kesin olarak uygulanmadı. Son mesajında “Anladım. Teşekkürler.” dediği için bilgi alımı/normal teşekkür türü bir iletişim olarak kabul ediliyor; şu anda sorun çözümlenmiş memnuniyet ifade eden bir durum yok. Bu nedenle nötr sentiment olarak sınıflandırılır.",
+        "raw_response": "{'sentiment': 'Nötr', 'explanation': 'Müşteri hata bildirdi ve çözüm henüz kesin olarak uygulanmadı. Son mesajında “Anladım. Teşekkürler.” dediği için bilgi alımı/normal teşekkür türü bir iletişim olarak kabul ediliyor; şu anda sorun çözümlenmiş memnuniyet ifade eden bir durum yok. Bu nedenle nötr sentiment olarak sınıflandırılır.'}",
+        "ground_truth": "Nötr"
+      },
+      {
+        "chat_id": "90019",
+        "predicted_sentiment": "Negatif",
+        "explanation": "Müşteri ödemesi alınmasına rağmen siparişlerin görünmediğini belirtiyor ve sistem için olumsuz bir eleştiri yapıyor ('Bu ne kadar kötü bir sistem'). Paramın iadesini istiyor ve şu anda ne yapacağını soruyor; sorun çözülmedi görünüyor.",
+        "raw_response": "{'sentiment': 'Negatif', 'explanation': \"Müşteri ödemesi alınmasına rağmen siparişlerin görünmediğini belirtiyor ve sistem için olumsuz bir eleştiri yapıyor ('Bu ne kadar kötü bir sistem'). Paramın iadesini istiyor ve şu anda ne yapacağını soruyor; sorun çözülmedi görünüyor.\"}",
+        "ground_truth": "Negatif"
+      },
+      {
+        "chat_id": "90020",
+        "predicted_sentiment": "Nötr",
+        "explanation": "Bilgi almak için geldi, ürün hakkında bilgi aldı ve teşekkür etti; çözüm/ memnuniyet ifadeleri olmadığından nötr olarak değerlendiriyoruz.",
+        "raw_response": "{'sentiment': 'Nötr', 'explanation': 'Bilgi almak için geldi, ürün hakkında bilgi aldı ve teşekkür etti; çözüm/ memnuniyet ifadeleri olmadığından nötr olarak değerlendiriyoruz.'}",
+        "ground_truth": "Nötr"
+      },
+      {
+        "chat_id": "90021",
+        "predicted_sentiment": "Pozitif",
+        "explanation": "Müşteri eksik promosyon ürünlerini bildirdi, sorun çözüldü ve müşteri hızlı çözüme teşekkür etti.",
+        "raw_response": "{'sentiment': 'Pozitif', 'explanation': 'Müşteri eksik promosyon ürünlerini bildirdi, sorun çözüldü ve müşteri hızlı çözüme teşekkür etti.'}",
+        "ground_truth": "Pozitif"
+      },
+      {
+        "chat_id": "90022",
+        "predicted_sentiment": "Negatif",
+        "explanation": "Müşteri, siparişinin iptal edildiğini ancak iadesinin 1 hafta geçmesine rağmen yapılmadığını belirtiyor ve 'Çok iyi bir hizmet değil bu' diyerek memnuniyetsizliğini ifade ediyor. Sorun çözülmediği için olumsuz bir duygu tetiklenmiş.",
+        "raw_response": "{'sentiment': 'Negatif', 'explanation': \"Müşteri, siparişinin iptal edildiğini ancak iadesinin 1 hafta geçmesine rağmen yapılmadığını belirtiyor ve 'Çok iyi bir hizmet değil bu' diyerek memnuniyetsizliğini ifade ediyor. Sorun çözülmediği için olumsuz bir duygu tetiklenmiş.\"}",
+        "ground_truth": "Negatif"
+      },
+      {
+        "chat_id": "90023",
+        "predicted_sentiment": "Pozitif",
+        "explanation": "Müşteri hasarlı ürün bildirdi ve çözüm olarak yenisiyle değiştirileceği belirtildi. Ardından müşteri “Çok iyi, teşekkürler!” diyerek memnuniyet ifadede bulundu. Sorunun çözüldüğü ve memnuniyetin belirtildiği bir durumda sentiment Pozitif olarak sınıflandırılır.",
+        "raw_response": "{'sentiment': 'Pozitif', 'explanation': 'Müşteri hasarlı ürün bildirdi ve çözüm olarak yenisiyle değiştirileceği belirtildi. Ardından müşteri “Çok iyi, teşekkürler!” diyerek memnuniyet ifadede bulundu. Sorunun çözüldüğü ve memnuniyetin belirtildiği bir durumda sentiment Pozitif olarak sınıflandırılır.'}",
+        "ground_truth": "Pozitif"
+      },
+      {
+        "chat_id": "90024",
+        "predicted_sentiment": "Negatif",
+        "explanation": "Müşteri değişim talebinde bulunuyor ancak değiştirme seçeneğinin olmadığını düşünüyor; iade ve yeniden sipariş sürecinin zahmetli olduğunu belirterek hizmeti eleştiriyor ve 'Çok kötü bir sistem' ifadesiyle memnuniyetsizliğini net şekilde dile getiriyor. Sorun şu anda çözülmemiş.",
+        "raw_response": "{'sentiment': 'Negatif', 'explanation': \"Müşteri değişim talebinde bulunuyor ancak değiştirme seçeneğinin olmadığını düşünüyor; iade ve yeniden sipariş sürecinin zahmetli olduğunu belirterek hizmeti eleştiriyor ve 'Çok kötü bir sistem' ifadesiyle memnuniyetsizliğini net şekilde dile getiriyor. Sorun şu anda çözülmemiş.\"}",
+        "ground_truth": "Negatif"
+      },
+      {
+        "chat_id": "90025",
+        "predicted_sentiment": "Nötr",
+        "explanation": "Kullanıcı bilgi almak için geldi, bilgi alındı ve teşekkür etti. Sorun çözümü yok ve memnuniyet ifadesi sınırlı; bilgilendirme işlemi nötr olarak değerlendirilir.",
+        "raw_response": "{'sentiment': 'Nötr', 'explanation': 'Kullanıcı bilgi almak için geldi, bilgi alındı ve teşekkür etti. Sorun çözümü yok ve memnuniyet ifadesi sınırlı; bilgilendirme işlemi nötr olarak değerlendirilir.'}",
+        "ground_truth": "Nötr"
+      },
+      {
+        "chat_id": "90026",
+        "predicted_sentiment": "Pozitif",
+        "explanation": "Müşteri yanlış ürün geldiğini bildirdi ve çözüme yönelik adımlar sağlandı: doğru ürünün en kısa sürede gönderileceği ve yanlış ürünün ücretsiz iade edilebileceği bilgisi verildi. Müşteri teşekkür etti ve memnun kaldı.",
+        "raw_response": "{'sentiment': 'Pozitif', 'explanation': 'Müşteri yanlış ürün geldiğini bildirdi ve çözüme yönelik adımlar sağlandı: doğru ürünün en kısa sürede gönderileceği ve yanlış ürünün ücretsiz iade edilebileceği bilgisi verildi. Müşteri teşekkür etti ve memnun kaldı.'}",
+        "ground_truth": "Pozitif"
+      },
+      {
+        "chat_id": "90027",
+        "predicted_sentiment": "Nötr",
+        "explanation": "Kullanıcı hesap kapatma talebinde bulundu, bot talimatı verdi ve kullanıcı 'Anladım, teşekkürler' dedi; sorun çözümü yok, bilgi paylaşımı ve teşekkür içeriyor.",
+        "raw_response": "{'sentiment': 'Nötr', 'explanation': \"Kullanıcı hesap kapatma talebinde bulundu, bot talimatı verdi ve kullanıcı 'Anladım, teşekkürler' dedi; sorun çözümü yok, bilgi paylaşımı ve teşekkür içeriyor.\"}",
+        "ground_truth": "Nötr"
+      },
+      {
+        "chat_id": "90028",
+        "predicted_sentiment": "Negatif",
+        "explanation": "Müşteri eksik ürün nedeniyle şikayetçi ve stokta görünmesine rağmen ürünün bulunmadığı için siparişe eklenemediğini öğrendi. Çözüm olarak para iadesi önerildi; müşteri iade istememekte ve ürünü istiyor. \"Çok kötü bir deneyim oldu\" ifadesi memnuniyetsizliği gösteriyor. Sorun müşterinin talebi doğrultusunda çözülmemiş olduğundan negatif.",
+        "raw_response": "{'sentiment': 'Negatif', 'explanation': 'Müşteri eksik ürün nedeniyle şikayetçi ve stokta görünmesine rağmen ürünün bulunmadığı için siparişe eklenemediğini öğrendi. Çözüm olarak para iadesi önerildi; müşteri iade istememekte ve ürünü istiyor. \"Çok kötü bir deneyim oldu\" ifadesi memnuniyetsizliği gösteriyor. Sorun müşterinin talebi doğrultusunda çözülmemiş olduğundan negatif.'}",
+        "ground_truth": "Negatif"
+      },
+      {
+        "chat_id": "90029",
+        "predicted_sentiment": "Pozitif",
+        "explanation": "Müşteri iade süreciyle ilgili sorun bildirdi ve sorun çözüldü; bot yeni bir iade kodu oluşturduktan sonra müşteri 'Harika! Çok teşekkürler.' diyerek memnuniyetini ifade etti. Çözüm ve teşekkür üzerinden olumlu sonuç oluştu.",
+        "raw_response": "{'sentiment': 'Pozitif', 'explanation': \"Müşteri iade süreciyle ilgili sorun bildirdi ve sorun çözüldü; bot yeni bir iade kodu oluşturduktan sonra müşteri 'Harika! Çok teşekkürler.' diyerek memnuniyetini ifade etti. Çözüm ve teşekkür üzerinden olumlu sonuç oluştu.\"}",
+        "ground_truth": "Pozitif"
+      },
+      {
+        "chat_id": "90030",
+        "predicted_sentiment": "Pozitif",
+        "explanation": "Müşteri teslimat adresindeki hatayı düzeltme konusunda yardım istedi ve bot uygun adımları sundu. Sonrasında müşteri teşekkür etti ve memnuniyet ifade etti: 'Teşekkürler, çok yardımcı oldunuz.' Bu, sorun çözümü/yardım için olumlu bir geri bildirimdir.",
+        "raw_response": "{'sentiment': 'Pozitif', 'explanation': \"Müşteri teslimat adresindeki hatayı düzeltme konusunda yardım istedi ve bot uygun adımları sundu. Sonrasında müşteri teşekkür etti ve memnuniyet ifade etti: 'Teşekkürler, çok yardımcı oldunuz.' Bu, sorun çözümü/yardım için olumlu bir geri bildirimdir.\"}",
+        "ground_truth": "Pozitif"
+      },
+      {
+        "chat_id": "90031",
+        "predicted_sentiment": "Nötr",
+        "explanation": "Sipariş durumuna dair bilgi alınıp yanıtlandı ve müşteri sadece bilgi elde etti; sorun çözümüne ihtiyaç duyulmadı ve müşteri teşekkür etti. Bu durumda nötr olarak sınıflandırılır.",
+        "raw_response": "{'sentiment': 'Nötr', 'explanation': 'Sipariş durumuna dair bilgi alınıp yanıtlandı ve müşteri sadece bilgi elde etti; sorun çözümüne ihtiyaç duyulmadı ve müşteri teşekkür etti. Bu durumda nötr olarak sınıflandırılır.'}",
+        "ground_truth": "Nötr"
+      },
+      {
+        "chat_id": "90032",
+        "predicted_sentiment": "Negatif",
+        "explanation": "Müşteri hesabından ödeme çekilmediğini bildiriyor ve siparişin tamamlanmadığını belirtiyor. Sorun çözülmemiş durumda ve müşteri &quot;Ne yapabilirim?&quot; diye yardım talep ediyor. Bu durum memnuniyetsizliğe işaret ediyor, dolayısıyla negatif.",
+        "raw_response": "{'sentiment': 'Negatif', 'explanation': 'Müşteri hesabından ödeme çekilmediğini bildiriyor ve siparişin tamamlanmadığını belirtiyor. Sorun çözülmemiş durumda ve müşteri &quot;Ne yapabilirim?&quot; diye yardım talep ediyor. Bu durum memnuniyetsizliğe işaret ediyor, dolayısıyla negatif.'}",
+        "ground_truth": "Negatif"
+      },
+      {
+        "chat_id": "90033",
+        "predicted_sentiment": "Pozitif",
+        "explanation": "Müşteri sorun bildirdi: ürünü denemek için sipariş verdi, bedeni olmadı. İade süreci başlatıldı, iade kodu oluşturuldu ve kargo ücretsiz olarak verildi. Müşteri teşekkür etti ve çok hızlı olduğunu belirtti. Çözüm olumlu ve memnuniyet ifade edildi.",
+        "raw_response": "{'sentiment': 'Pozitif', 'explanation': 'Müşteri sorun bildirdi: ürünü denemek için sipariş verdi, bedeni olmadı. İade süreci başlatıldı, iade kodu oluşturuldu ve kargo ücretsiz olarak verildi. Müşteri teşekkür etti ve çok hızlı olduğunu belirtti. Çözüm olumlu ve memnuniyet ifade edildi.'}",
+        "ground_truth": "Pozitif"
+      },
+      {
+        "chat_id": "90034",
+        "predicted_sentiment": "Negatif",
+        "explanation": "Kullanıcı kupon kodunun çalışmamasını bildirdi ve çözüm bulunamadı; 'Bir çözümünüz yok mu?' ifadesiyle çözüm talebi var, son olarak 'Çok kötü bir hizmet' şeklinde net olumsuz eleştiri gösterdi. Bu nedenle sorun çözülmediği için Negatif.",
+        "raw_response": "{'sentiment': 'Negatif', 'explanation': \"Kullanıcı kupon kodunun çalışmamasını bildirdi ve çözüm bulunamadı; 'Bir çözümünüz yok mu?' ifadesiyle çözüm talebi var, son olarak 'Çok kötü bir hizmet' şeklinde net olumsuz eleştiri gösterdi. Bu nedenle sorun çözülmediği için Negatif.\"}",
+        "ground_truth": "Negatif"
+      },
+      {
+        "chat_id": "90035",
+        "predicted_sentiment": "Negatif",
+        "explanation": "Müşteri kargo takibiyle ilgili sorun bildiriyor; takip numarası çalışmıyor ve kargonun nerede olduğu konusunda net bilgi alamamış. Durumdan memnun değil ve çözüm henüz sağlanmamış.",
+        "raw_response": "{'sentiment': 'Negatif', 'explanation': 'Müşteri kargo takibiyle ilgili sorun bildiriyor; takip numarası çalışmıyor ve kargonun nerede olduğu konusunda net bilgi alamamış. Durumdan memnun değil ve çözüm henüz sağlanmamış.'}",
+        "ground_truth": "Negatif"
+      },
+      {
+        "chat_id": "90036",
+        "predicted_sentiment": "Pozitif",
+        "explanation": "Müşteri siparişini iptal etmek istedi ve sipariş kargoya verilmeden iptal edilmiştir. Sorun çözüldü ve müşteri teşekkür etti (teşekkür ederim). Bu nedenle memnuniyet ifadesiyle olumlu bir sentiment olarak değerlendirildi.",
+        "raw_response": "{'sentiment': 'Pozitif', 'explanation': 'Müşteri siparişini iptal etmek istedi ve sipariş kargoya verilmeden iptal edilmiştir. Sorun çözüldü ve müşteri teşekkür etti (teşekkür ederim). Bu nedenle memnuniyet ifadesiyle olumlu bir sentiment olarak değerlendirildi.'}",
+        "ground_truth": "Pozitif"
+      },
+      {
+        "chat_id": "90037",
+        "predicted_sentiment": "Nötr",
+        "explanation": "Kullanıcı bir sorun bildirdi ve garanti kapsamında tamir olup olmadığını sordu; süreç henüz çözümlenmedi. Müşteri yalnızca teşekkür etti, ancak sorun çözülmüş gibi net bir memnuniyet ifadesi veya çözüm bildirilmediği için genel duygu nötr olarak değerlendirildi.",
+        "raw_response": "{'sentiment': 'Nötr', 'explanation': 'Kullanıcı bir sorun bildirdi ve garanti kapsamında tamir olup olmadığını sordu; süreç henüz çözümlenmedi. Müşteri yalnızca teşekkür etti, ancak sorun çözülmüş gibi net bir memnuniyet ifadesi veya çözüm bildirilmediği için genel duygu nötr olarak değerlendirildi.'}",
+        "ground_truth": "Nötr"
+      },
+      {
+        "chat_id": "90038",
+        "predicted_sentiment": "Nötr",
+        "explanation": "Kullanıcı bilgi almak amacıyla geldi, abonelikten çıkış adımı hakkında bilgi verildi ve kullanıcı teşekkür etti; çözüm/sonuç iletilmediği için ve sadece bilgi paylaşımı olduğu için nötr.",
+        "raw_response": "{'sentiment': 'Nötr', 'explanation': 'Kullanıcı bilgi almak amacıyla geldi, abonelikten çıkış adımı hakkında bilgi verildi ve kullanıcı teşekkür etti; çözüm/sonuç iletilmediği için ve sadece bilgi paylaşımı olduğu için nötr.'}",
+        "ground_truth": "Nötr"
+      },
+      {
+        "chat_id": "90039",
+        "predicted_sentiment": "Pozitif",
+        "explanation": "Müşteri kargoda gecikme bildirdi; sorun çözüldü ve teslimat yarına yapılacağı belirtildi. Müşteri teşekkür etti ve memnuniyetini ifade etti.",
+        "raw_response": "{'sentiment': 'Pozitif', 'explanation': 'Müşteri kargoda gecikme bildirdi; sorun çözüldü ve teslimat yarına yapılacağı belirtildi. Müşteri teşekkür etti ve memnuniyetini ifade etti.'}",
+        "ground_truth": "Nötr"
+      },
+      {
+        "chat_id": "90040",
+        "predicted_sentiment": "Negatif",
+        "explanation": "Müşteri iade sürecinin uzun sürmesinden şikayet ediyor; 10 gündür beklediğini belirtiyor ve sürecin ne anlama geldiğini soruyor. Son cümlede 'Artık yeter. Ne kadar kötü bir hizmet.' diyerek memnuniyetsizliğini ifade ediyor; sorun çözülmüş değil ve durum hâlâ belirsiz/çözülmemiş.",
+        "raw_response": "{'sentiment': 'Negatif', 'explanation': \"Müşteri iade sürecinin uzun sürmesinden şikayet ediyor; 10 gündür beklediğini belirtiyor ve sürecin ne anlama geldiğini soruyor. Son cümlede 'Artık yeter. Ne kadar kötü bir hizmet.' diyerek memnuniyetsizliğini ifade ediyor; sorun çözülmüş değil ve durum hâlâ belirsiz/çözülmemiş.\"}",
+        "ground_truth": "Negatif"
+      }
+    ],
+    "accuracy": 92.5,
+    "total_analyzed": 40,
+    "successful": 40,
+    "errors": 0,
+    "correct_predictions": 37
+  },
+  "intent_analysis": {
+    "results": [
+      {
+        "chat_id": "90001",
+        "predicted_intent": "Eksik ürün",
+        "predicted_detail": "Siparişimde bir ürün eksik geldiğini bildirdi; sipariş numarası 98765432. Nasıl işlem yapılacağı soruldu; müşteri için eksik ürünün tamamının gönderileceği belirtildi.",
+        "predicted_category": "Şikayet",
+        "raw_response": "{'intent': 'Eksik ürün', 'detail': 'Siparişimde bir ürün eksik geldiğini bildirdi; sipariş numarası 98765432. Nasıl işlem yapılacağı soruldu; müşteri için eksik ürünün tamamının gönderileceği belirtildi.', 'category': 'Şikayet'}",
+        "ground_truth_intent": "Eksik ürün",
+        "ground_truth_detail": "Sipariş teslimatında eksik ürün",
+        "ground_truth_tur": "Şikayet"
+      },
+      {
+        "chat_id": "90002",
+        "predicted_intent": "Şifre sıfırlama",
+        "predicted_detail": "Kullanıcı hesaba giriş yapamıyor, şifresini unuttu. Şifre sıfırlama linkinin e-posta adresine gelmediğini belirtti; e-posta kutusunu ve spam klasörünü kontrol etti fakat link bulunamadı. Şu anda alternatif bir erişim yöntemi talep ediyor.",
+        "predicted_category": "Şifre sıfırlama",
+        "raw_response": "{'intent': 'Şifre sıfırlama', 'detail': 'Kullanıcı hesaba giriş yapamıyor, şifresini unuttu. Şifre sıfırlama linkinin e-posta adresine gelmediğini belirtti; e-posta kutusunu ve spam klasörünü kontrol etti fakat link bulunamadı. Şu anda alternatif bir erişim yöntemi talep ediyor.', 'category': 'Şifre sıfırlama'}",
+        "ground_truth_intent": "Şifre sıfırlama",
+        "ground_truth_detail": "E-posta linki gelmemesi",
+        "ground_truth_tur": "Sorun"
+      },
+      {
+        "chat_id": "90003",
+        "predicted_intent": "İade",
+        "predicted_detail": "İade sürecinin nasıl işlediğini öğrenmek istedi.",
+        "predicted_category": "İade",
+        "raw_response": "{'intent': 'İade', 'detail': 'İade sürecinin nasıl işlediğini öğrenmek istedi.', 'category': 'İade'}",
+        "ground_truth_intent": "İade",
+        "ground_truth_detail": "İade prosedürü hakkında bilgi",
+        "ground_truth_tur": "Bilgi alma"
+      },
+      {
+        "chat_id": "90004",
+        "predicted_intent": "Kupon",
+        "predicted_detail": "Kupon kodu çalışmıyor: 'Hoş Geldin15' kuponunu kullanmak istedim ama hata veriyor. Sepet tutarı 200 TL üzerinde. Geçerlilik koşulları kontrol edildi; farklı tarayıcı denemek ve önbelleği temizlemek önerildi, fakat sorun sürüyor. Müşteri çözüm alamadığını ve zaman kaybı olduğunu belirtti.",
+        "predicted_category": "Kupon",
+        "raw_response": "{'intent': 'Kupon', 'detail': \"Kupon kodu çalışmıyor: 'Hoş Geldin15' kuponunu kullanmak istedim ama hata veriyor. Sepet tutarı 200 TL üzerinde. Geçerlilik koşulları kontrol edildi; farklı tarayıcı denemek ve önbelleği temizlemek önerildi, fakat sorun sürüyor. Müşteri çözüm alamadığını ve zaman kaybı olduğunu belirtti.\", 'category': 'Kupon'}",
+        "ground_truth_intent": "Kupon",
+        "ground_truth_detail": "Kupon kodunun çalışmaması",
+        "ground_truth_tur": "Sorun"
+      },
+      {
+        "chat_id": "90005",
+        "predicted_intent": "İptal",
+        "predicted_detail": "Müşteri siparişini iptal etmek istedi; iptal işlemi başarıyla gerçekleştirildi. Sipariş numarası: 76458902.",
+        "predicted_category": "İptal",
+        "raw_response": "{'intent': 'İptal', 'detail': 'Müşteri siparişini iptal etmek istedi; iptal işlemi başarıyla gerçekleştirildi. Sipariş numarası: 76458902.', 'category': 'İptal'}",
+        "ground_truth_intent": "İptal",
+        "ground_truth_detail": "Sipariş iptali",
+        "ground_truth_tur": "İstek"
+      },
+      {
+        "chat_id": "90006",
+        "predicted_intent": "İade",
+        "predicted_detail": "İade kargomun ne zaman ulaşacağını öğrenmek istiyorum.",
+        "predicted_category": "İade",
+        "raw_response": "{'intent': 'İade', 'detail': 'İade kargomun ne zaman ulaşacağını öğrenmek istiyorum.', 'category': 'İade'}",
+        "ground_truth_intent": "İade",
+        "ground_truth_detail": "İade kargosu takibi",
+        "ground_truth_tur": "Soru"
+      },
+      {
+        "chat_id": "90007",
+        "predicted_intent": "Defolu ürün",
+        "predicted_detail": "Müşteri defolu gelen ürünü belirtiyor ve değişim veya iade talep ediyor. Yetkili, defolu kısmın fotoğrafını göndermesini istiyor; müşteri telefonundan fotoğraf çekemediğini belirtiyor ve alternatif bir kanıt yolu olup olmadığını sorguluyor. Ayrıca iade/Değişim işleminin nasıl ilerleyeceğini öğrenmek istiyor.",
+        "predicted_category": "Soru",
+        "raw_response": "{'intent': 'Defolu ürün', 'detail': 'Müşteri defolu gelen ürünü belirtiyor ve değişim veya iade talep ediyor. Yetkili, defolu kısmın fotoğrafını göndermesini istiyor; müşteri telefonundan fotoğraf çekemediğini belirtiyor ve alternatif bir kanıt yolu olup olmadığını sorguluyor. Ayrıca iade/Değişim işleminin nasıl ilerleyeceğini öğrenmek istiyor.', 'category': 'Soru'}",
+        "ground_truth_intent": "Defolu ürün",
+        "ground_truth_detail": "Değişim/iade yapılamaması",
+        "ground_truth_tur": "Şikayet"
+      },
+      {
+        "chat_id": "90008",
+        "predicted_intent": "Hesap bilgisi",
+        "predicted_detail": "İstek",
+        "predicted_category": "Hesap bilgisi",
+        "raw_response": "{'intent': 'Hesap bilgisi', 'detail': 'İstek', 'category': 'Hesap bilgisi'}",
+        "ground_truth_intent": "Hesap bilgisi",
+        "ground_truth_detail": "Üyelik bilgisi güncelleme",
+        "ground_truth_tur": "İstek"
+      },
+      {
+        "chat_id": "90009",
+        "predicted_intent": "Fatura hatası",
+        "predicted_detail": "Fiyatlar hatalı görünüyor; faturadaki hatanın düzeltileceği ve güncel faturanın e-posta ile gönderileceği belirtildi",
+        "predicted_category": "Fatura",
+        "raw_response": "{'intent': 'Fatura hatası', 'detail': 'Fiyatlar hatalı görünüyor; faturadaki hatanın düzeltileceği ve güncel faturanın e-posta ile gönderileceği belirtildi', 'category': 'Fatura'}",
+        "ground_truth_intent": "Fatura hatası",
+        "ground_truth_detail": "Fatura fiyatı hatası",
+        "ground_truth_tur": "Şikayet"
+      },
+      {
+        "chat_id": "90010",
+        "predicted_intent": "İptal",
+        "predicted_detail": "Müşteri siparişini iptal etmek istiyor ancak sistemde 'iptal et' butonu görünmüyor; sipariş kargoya verildiği için iptal edilemiyor ve bu durumda iade süreciyle devam edilmesi gerektiği bildirildi. Müşteri ise siparişinin yeni kargoya verilmişken iptal edebilmesi gerektiğini ifade ederek hizmetten memnun olmadığını belirtiyor.",
+        "predicted_category": "İptal",
+        "raw_response": "{'intent': 'İptal', 'detail': \"Müşteri siparişini iptal etmek istiyor ancak sistemde 'iptal et' butonu görünmüyor; sipariş kargoya verildiği için iptal edilemiyor ve bu durumda iade süreciyle devam edilmesi gerektiği bildirildi. Müşteri ise siparişinin yeni kargoya verilmişken iptal edebilmesi gerektiğini ifade ederek hizmetten memnun olmadığını belirtiyor.\", 'category': 'İptal'}",
+        "ground_truth_intent": "İptal",
+        "ground_truth_detail": "Sipariş iptali yapılamaması",
+        "ground_truth_tur": "Sorun"
+      },
+      {
+        "chat_id": "90011",
+        "predicted_intent": "Stok",
+        "predicted_detail": "AB-456 için stok durumu ve stok yenileme tarihi bilgisi talebi",
+        "predicted_category": "Stok",
+        "raw_response": "{'intent': 'Stok', 'detail': 'AB-456 için stok durumu ve stok yenileme tarihi bilgisi talebi', 'category': 'Stok'}",
+        "ground_truth_intent": "Stok",
+        "ground_truth_detail": "Stok yenileme tarihi",
+        "ground_truth_tur": "Soru"
+      },
+      {
+        "chat_id": "90012",
+        "predicted_intent": "Ödeme",
+        "predicted_detail": "Müşteri kredi kartından iki kez çekim yapıldığını bildirdi. Banka ekstresi kanıtı isteniyor ancak müşteri telefondaki banka uygulamasını açamadığı için temin edememiştir. Müşteri ayrıca bir müşteri temsilcisi ile görüşmek istiyor (yardım talebi).",
+        "predicted_category": "Ödeme",
+        "raw_response": "{'intent': 'Ödeme', 'detail': 'Müşteri kredi kartından iki kez çekim yapıldığını bildirdi. Banka ekstresi kanıtı isteniyor ancak müşteri telefondaki banka uygulamasını açamadığı için temin edememiştir. Müşteri ayrıca bir müşteri temsilcisi ile görüşmek istiyor (yardım talebi).', 'category': 'Ödeme'}",
+        "ground_truth_intent": "Ödeme",
+        "ground_truth_detail": "Çifte çekim",
+        "ground_truth_tur": "Şikayet"
+      },
+      {
+        "chat_id": "90013",
+        "predicted_intent": "Kargo",
+        "predicted_detail": "Sipariş hâlâ hazırlanıyor ve kargoya verilme zamanı hakkında bilgi talep ediliyor. Sipariş numarası paylaşılmış durumda.",
+        "predicted_category": "Kargo",
+        "raw_response": "{'intent': 'Kargo', 'detail': 'Sipariş hâlâ hazırlanıyor ve kargoya verilme zamanı hakkında bilgi talep ediliyor. Sipariş numarası paylaşılmış durumda.', 'category': 'Kargo'}",
+        "ground_truth_intent": "Kargo",
+        "ground_truth_detail": "Kargo durumu",
+        "ground_truth_tur": "Soru"
+      },
+      {
+        "chat_id": "90014",
+        "predicted_intent": "Ödeme",
+        "predicted_detail": "Kredi kartımın reddedilme nedenini öğrenmek istiyorum.",
+        "predicted_category": "Soru",
+        "raw_response": "{'intent': 'Ödeme', 'detail': 'Kredi kartımın reddedilme nedenini öğrenmek istiyorum.', 'category': 'Soru'}",
+        "ground_truth_intent": "Ödeme",
+        "ground_truth_detail": "Kredi kartı reddedilmesi",
+        "ground_truth_tur": "Sorun"
+      },
+      {
+        "chat_id": "90015",
+        "predicted_intent": "Beden tablosu",
+        "predicted_detail": "Ürün beden tablosunu bulamama talebi; kullanıcı sonunda beden tablosunu buldu.",
+        "predicted_category": "Beden tablosu",
+        "raw_response": "{'intent': 'Beden tablosu', 'detail': 'Ürün beden tablosunu bulamama talebi; kullanıcı sonunda beden tablosunu buldu.', 'category': 'Beden tablosu'}",
+        "ground_truth_intent": "Beden tablosu",
+        "ground_truth_detail": "Ürün beden tablosu",
+        "ground_truth_tur": "Bilgi alma"
+      },
+      {
+        "chat_id": "90016",
+        "predicted_intent": "Adres hatası",
+        "predicted_detail": "Adresinizi yanlış girdiniz ve düzeltme talep ediyorsunuz. Sipariş kargoya verilmedi ise hesap bölümünden adresi güncelleme seçeneğinin olduğunu belirttik; kargoya verildiyse kargo firmasıyla iletişime geçmeniz gerektiğini söyledik. Ancak bu süreç sizi rahatsız ediyor ve çözüme ulaşamadığınız hissiyatını dile getiriyorsunuz.",
+        "predicted_category": "Adres hatası",
+        "raw_response": "{'intent': 'Adres hatası', 'detail': 'Adresinizi yanlış girdiniz ve düzeltme talep ediyorsunuz. Sipariş kargoya verilmedi ise hesap bölümünden adresi güncelleme seçeneğinin olduğunu belirttik; kargoya verildiyse kargo firmasıyla iletişime geçmeniz gerektiğini söyledik. Ancak bu süreç sizi rahatsız ediyor ve çözüme ulaşamadığınız hissiyatını dile getiriyorsunuz.', 'category': 'Adres hatası'}",
+        "ground_truth_intent": "Adres hatası",
+        "ground_truth_detail": "Yanlış adres girişi",
+        "ground_truth_tur": "Sorun"
+      },
+      {
+        "chat_id": "90017",
+        "predicted_intent": "Yorum",
+        "predicted_detail": "Ürün yorumu neden yayınlanmadı, hangi kural ihlal edildiğini açıklamasını talep ediyor (bilgi almak için soruyor).",
+        "predicted_category": "Yorum",
+        "raw_response": "{'intent': 'Yorum', 'detail': 'Ürün yorumu neden yayınlanmadı, hangi kural ihlal edildiğini açıklamasını talep ediyor (bilgi almak için soruyor).', 'category': 'Yorum'}",
+        "ground_truth_intent": "Yorum",
+        "ground_truth_detail": "Yorum yayınlanmaması",
+        "ground_truth_tur": "Şikayet"
+      },
+      {
+        "chat_id": "90018",
+        "predicted_intent": "Web sitesi",
+        "predicted_detail": "Sitede gezinirken sürekli hata alıyorum. '404 not found' diyor.",
+        "predicted_category": "Web sitesi",
+        "raw_response": "{'intent': 'Web sitesi', 'detail': \"Sitede gezinirken sürekli hata alıyorum. '404 not found' diyor.\", 'category': 'Web sitesi'}",
+        "ground_truth_intent": "Web sitesi",
+        "ground_truth_detail": "Teknik hata",
+        "ground_truth_tur": "Şikayet"
+      },
+      {
+        "chat_id": "90019",
+        "predicted_intent": "Ödeme",
+        "predicted_detail": "Sipariş için ödeme çekildi fakat Siparişlerim sayfasında görünmüyor; para iadesi ve süreci hakkında bilgi talep ediyor, iade/geri ödeme yapılmasını istiyor.",
+        "predicted_category": "Ödeme",
+        "raw_response": "{'intent': 'Ödeme', 'detail': 'Sipariş için ödeme çekildi fakat Siparişlerim sayfasında görünmüyor; para iadesi ve süreci hakkında bilgi talep ediyor, iade/geri ödeme yapılmasını istiyor.', 'category': 'Ödeme'}",
+        "ground_truth_intent": "Ödeme",
+        "ground_truth_detail": "Hesaptan para çekilip siparişin oluşmaması",
+        "ground_truth_tur": "Sorun"
+      },
+      {
+        "chat_id": "90020",
+        "predicted_intent": "Ürün",
+        "predicted_detail": "Kumaş materyali hakkında bilgi talebi",
+        "predicted_category": "Bilgi alma",
+        "raw_response": "{'intent': 'Ürün', 'detail': 'Kumaş materyali hakkında bilgi talebi', 'category': 'Bilgi alma'}",
+        "ground_truth_intent": "Ürün",
+        "ground_truth_detail": "Ürün bilgisi",
+        "ground_truth_tur": "Bilgi alma"
+      },
+      {
+        "chat_id": "90021",
+        "predicted_intent": "Eksik ürün",
+        "predicted_detail": "Siparişte promosyon ürünleri eksik geldi; eksik olanlar çanta ve cüzdan. Sipariş numarası 85472196 ile bildirildi.",
+        "predicted_category": "Eksik ürün",
+        "raw_response": "{'intent': 'Eksik ürün', 'detail': 'Siparişte promosyon ürünleri eksik geldi; eksik olanlar çanta ve cüzdan. Sipariş numarası 85472196 ile bildirildi.', 'category': 'Eksik ürün'}",
+        "ground_truth_intent": "Eksik ürün",
+        "ground_truth_detail": "Eksik promosyon ürünleri",
+        "ground_truth_tur": "Şikayet"
+      },
+      {
+        "chat_id": "90022",
+        "predicted_intent": "İade",
+        "predicted_detail": "İptal edilen siparişin iadesinin durumu hakkında bilgi almak istiyor; iade takibi ve bankaya yansıma süresi (1-5 iş günüdür) konusunda güncel bilgi talep ediyor; müşteri şikayetçi.",
+        "predicted_category": "İade",
+        "raw_response": "{'intent': 'İade', 'detail': 'İptal edilen siparişin iadesinin durumu hakkında bilgi almak istiyor; iade takibi ve bankaya yansıma süresi (1-5 iş günüdür) konusunda güncel bilgi talep ediyor; müşteri şikayetçi.', 'category': 'İade'}",
+        "ground_truth_intent": "İade",
+        "ground_truth_detail": "Para iadesi gecikmesi",
+        "ground_truth_tur": "Şikayet"
+      },
+      {
+        "chat_id": "90023",
+        "predicted_intent": "Hasarlı ürün",
+        "predicted_detail": "Kargo kaynaklı hasar bildirilmiş; sipariş numarası 78965412; hasarlı ürün için fotoğraf iletildi; en kısa sürede yenisiyle değiştirme işlemi başlatıldı.",
+        "predicted_category": "Hasarlı ürün",
+        "raw_response": "{'intent': 'Hasarlı ürün', 'detail': 'Kargo kaynaklı hasar bildirilmiş; sipariş numarası 78965412; hasarlı ürün için fotoğraf iletildi; en kısa sürede yenisiyle değiştirme işlemi başlatıldı.', 'category': 'Hasarlı ürün'}",
+        "ground_truth_intent": "Hasarlı ürün",
+        "ground_truth_detail": "Kargodan kaynaklı hasar",
+        "ground_truth_tur": "Şikayet"
+      },
+      {
+        "chat_id": "90024",
+        "predicted_intent": "Değişim seçeneği",
+        "predicted_detail": "Müşteri, ürünü rengini beğenmediği için değişim yapmak istiyor; mevcut değişim seçeneğinin olmadığını ve iade + yeniden sipariş sürecinin zahmetli olduğunu belirtiyor.",
+        "predicted_category": "Değişim",
+        "raw_response": "{'intent': 'Değişim seçeneği', 'detail': 'Müşteri, ürünü rengini beğenmediği için değişim yapmak istiyor; mevcut değişim seçeneğinin olmadığını ve iade + yeniden sipariş sürecinin zahmetli olduğunu belirtiyor.', 'category': 'Değişim'}",
+        "ground_truth_intent": "Değişim",
+        "ground_truth_detail": "Değişim seçeneği olmaması",
+        "ground_truth_tur": "Şikayet"
+      },
+      {
+        "chat_id": "90025",
+        "predicted_intent": "İndirim",
+        "predicted_detail": "İndirim kampanyaları hakkında bilgi almak istiyorum.",
+        "predicted_category": "Bilgi alma",
+        "raw_response": "{'intent': 'İndirim', 'detail': 'İndirim kampanyaları hakkında bilgi almak istiyorum.', 'category': 'Bilgi alma'}",
+        "ground_truth_intent": "İndirim",
+        "ground_truth_detail": "Kampanya bilgisi",
+        "ground_truth_tur": "Bilgi alma"
+      },
+      {
+        "chat_id": "90026",
+        "predicted_intent": "Yanlış ürün",
+        "predicted_detail": "Yanlış ürün teslim edildiği için iade süreci ve doğru ürünün gönderimi talebi/çabası.",
+        "predicted_category": "Yanlış ürün",
+        "raw_response": "{'intent': 'Yanlış ürün', 'detail': 'Yanlış ürün teslim edildiği için iade süreci ve doğru ürünün gönderimi talebi/çabası.', 'category': 'Yanlış ürün'}",
+        "ground_truth_intent": "Yanlış ürün",
+        "ground_truth_detail": "Yanlış ürün gönderimi",
+        "ground_truth_tur": "Şikayet"
+      },
+      {
+        "chat_id": "90027",
+        "predicted_intent": "Hesap kapatma",
+        "predicted_detail": "Hesabımı kapatmak istiyorum",
+        "predicted_category": "İstek",
+        "raw_response": "{'intent': 'Hesap kapatma', 'detail': 'Hesabımı kapatmak istiyorum', 'category': 'İstek'}",
+        "ground_truth_intent": "Hesap kapatma",
+        "ground_truth_detail": "Hesap kapatma",
+        "ground_truth_tur": "İstek"
+      },
+      {
+        "chat_id": "90028",
+        "predicted_intent": "Eksik ürün",
+        "predicted_detail": "Stokta görünen bir ürün siparişte eksik çıktı; stokta olmadığını söyleyip siparişe eklenemediğini belirttiniz. İade teklif edildi, siz iade istemiyorsunuz ve ürünü almayı talep ediyorsunuz. Bu durumdan memnun değilsiniz ve çözüm talep ediyorsunuz.",
+        "predicted_category": "Eksik ürün",
+        "raw_response": "{'intent': 'Eksik ürün', 'detail': 'Stokta görünen bir ürün siparişte eksik çıktı; stokta olmadığını söyleyip siparişe eklenemediğini belirttiniz. İade teklif edildi, siz iade istemiyorsunuz ve ürünü almayı talep ediyorsunuz. Bu durumdan memnun değilsiniz ve çözüm talep ediyorsunuz.', 'category': 'Eksik ürün'}",
+        "ground_truth_intent": "Eksik ürün",
+        "ground_truth_detail": "Stokta görünen ürünün eksik gelmesi",
+        "ground_truth_tur": "Şikayet"
+      },
+      {
+        "chat_id": "90029",
+        "predicted_intent": "İade",
+        "predicted_detail": "İade kodunun geçersiz olduğundan iade süreciyle ilgili sorun yaşadım; yeni bir iade kodu verildi: ABC-5678.",
+        "predicted_category": "İade",
+        "raw_response": "{'intent': 'İade', 'detail': 'İade kodunun geçersiz olduğundan iade süreciyle ilgili sorun yaşadım; yeni bir iade kodu verildi: ABC-5678.', 'category': 'İade'}",
+        "ground_truth_intent": "İade",
+        "ground_truth_detail": "İade kodunun geçersiz olması",
+        "ground_truth_tur": "Sorun"
+      },
+      {
+        "chat_id": "90030",
+        "predicted_intent": "Adres hatası",
+        "predicted_detail": "Teslimat adresinde hata olduğunu fark etti; adres güncelleme adımlarının ve gerekli süreç hakkında bilgi almak istiyor.",
+        "predicted_category": "Adres hatası",
+        "raw_response": "{'intent': 'Adres hatası', 'detail': 'Teslimat adresinde hata olduğunu fark etti; adres güncelleme adımlarının ve gerekli süreç hakkında bilgi almak istiyor.', 'category': 'Adres hatası'}",
+        "ground_truth_intent": "Adres hatası",
+        "ground_truth_detail": "Yanlış teslimat adresi",
+        "ground_truth_tur": "Sorun"
+      },
+      {
+        "chat_id": "90031",
+        "predicted_intent": "Destek",
+        "predicted_detail": "Hata: Could not parse response content as the length limit was reached - CompletionUsage(completion_tokens=5000, prompt_tokens=2674, total_tokens=7674, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=0, audio_tokens=0, reasoning_tokens=5000, rejected_prediction_tokens=0), prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cached_tokens=0))",
+        "predicted_category": "Soru",
+        "raw_response": "",
+        "ground_truth_intent": "Sipariş",
+        "ground_truth_detail": "Sipariş durumu",
+        "ground_truth_tur": "Soru"
+      },
+      {
+        "chat_id": "90032",
+        "predicted_intent": "Ödeme",
+        "predicted_detail": "Sipariş numarası 34567890 ile sipariş verdim ancak hesabımdan ödeme çekilmedi ve sipariş tamamlanmadı. Ne yapmam gerekiyor?",
+        "predicted_category": "Ödeme",
+        "raw_response": "{'intent': 'Ödeme', 'detail': 'Sipariş numarası 34567890 ile sipariş verdim ancak hesabımdan ödeme çekilmedi ve sipariş tamamlanmadı. Ne yapmam gerekiyor?', 'category': 'Ödeme'}",
+        "ground_truth_intent": "Ödeme",
+        "ground_truth_detail": "Ödemenin tamamlanmaması",
+        "ground_truth_tur": "Sorun"
+      },
+      {
+        "chat_id": "90033",
+        "predicted_intent": "Beden",
+        "predicted_detail": "Beden uyuşmazlığı nedeniyle iade talebi başlatıldı. Sipariş numarası: 12398765.",
+        "predicted_category": "İade",
+        "raw_response": "{'intent': 'Beden', 'detail': 'Beden uyuşmazlığı nedeniyle iade talebi başlatıldı. Sipariş numarası: 12398765.', 'category': 'İade'}",
+        "ground_truth_intent": "Beden",
+        "ground_truth_detail": "Beden uyuşmazlığı",
+        "ground_truth_tur": "İade"
+      },
+      {
+        "chat_id": "90034",
+        "predicted_intent": "Kupon",
+        "predicted_detail": "Kupon kodunun çalışmamasıyla ilgili yardım talebi. Müşteri, kuponun süresinin dolmadığını ve geçerli olduğu ürün/sepet kriterlerini karşıladığını belirtti; sistemde kuponla ilgili hata görünmediğini iletildi; müşteri alternatif bir çözüm talep ediyor ve hizmetten memnun olmadığını dile getiriyor.",
+        "predicted_category": "Kupon",
+        "raw_response": "{'intent': 'Kupon', 'detail': 'Kupon kodunun çalışmamasıyla ilgili yardım talebi. Müşteri, kuponun süresinin dolmadığını ve geçerli olduğu ürün/sepet kriterlerini karşıladığını belirtti; sistemde kuponla ilgili hata görünmediğini iletildi; müşteri alternatif bir çözüm talep ediyor ve hizmetten memnun olmadığını dile getiriyor.', 'category': 'Kupon'}",
+        "ground_truth_intent": "Kupon",
+        "ground_truth_detail": "Kupon kodunun çalışmaması",
+        "ground_truth_tur": "Sorun"
+      },
+      {
+        "chat_id": "90035",
+        "predicted_intent": "Kargo",
+        "predicted_detail": "Kargom nerede kaldı? Takip numarası 1234567890 çalışmıyor; kargo hâlâ teslim edilmemiş görünüyor ve müşteriden tahmini teslim süresi hakkında bilgi ile durumdan memnuniyetsizlik ifade ediliyor.",
+        "predicted_category": "Kargo",
+        "raw_response": "{'intent': 'Kargo', 'detail': 'Kargom nerede kaldı? Takip numarası 1234567890 çalışmıyor; kargo hâlâ teslim edilmemiş görünüyor ve müşteriden tahmini teslim süresi hakkında bilgi ile durumdan memnuniyetsizlik ifade ediliyor.', 'category': 'Kargo'}",
+        "ground_truth_intent": "Kargo",
+        "ground_truth_detail": "Kargonun gecikmesi",
+        "ground_truth_tur": "Soru"
+      },
+      {
+        "chat_id": "90036",
+        "predicted_intent": "İptal",
+        "predicted_detail": "Sipariş iptal talebi; Sipariş numarası: 87654321; sipariş kargoya verilmeden iptal edilmiştir.",
+        "predicted_category": "İptal",
+        "raw_response": "{'intent': 'İptal', 'detail': 'Sipariş iptal talebi; Sipariş numarası: 87654321; sipariş kargoya verilmeden iptal edilmiştir.', 'category': 'İptal'}",
+        "ground_truth_intent": "İptal",
+        "ground_truth_detail": "Sipariş iptali",
+        "ground_truth_tur": "İstek"
+      },
+      {
+        "chat_id": "90037",
+        "predicted_intent": "Teknik sorun",
+        "predicted_detail": "Kulaklıkta şarj tutmama hatası var; garanti kapsamında tamir edilip edilemeyeceği soruldu; teknik servise göndermek gerektiği belirtildi; gönderim için adres/gönderim detayları için e-posta paylaşılacak.",
+        "predicted_category": "Teknik sorun",
+        "raw_response": "{'intent': 'Teknik sorun', 'detail': 'Kulaklıkta şarj tutmama hatası var; garanti kapsamında tamir edilip edilemeyeceği soruldu; teknik servise göndermek gerektiği belirtildi; gönderim için adres/gönderim detayları için e-posta paylaşılacak.', 'category': 'Teknik sorun'}",
+        "ground_truth_intent": "Teknik sorun",
+        "ground_truth_detail": "Garanti kapsamında tamir",
+        "ground_truth_tur": "Sorun"
+      },
+      {
+        "chat_id": "90038",
+        "predicted_intent": "Abonelik",
+        "predicted_detail": "E-posta bülteninden çıkış talebi",
+        "predicted_category": "Abonelik",
+        "raw_response": "{'intent': 'Abonelik', 'detail': 'E-posta bülteninden çıkış talebi', 'category': 'Abonelik'}",
+        "ground_truth_intent": "Abonelik",
+        "ground_truth_detail": "E-posta aboneliği iptali",
+        "ground_truth_tur": "İstek"
+      },
+      {
+        "chat_id": "90039",
+        "predicted_intent": "Kargo",
+        "predicted_detail": "Kargodaki gecikme nedeniyle teslimatın neden gelmediğini ve güncel kargo durumunu öğrenmek istiyor; tahmini teslimat tarihi için bilgi talep ediyor.",
+        "predicted_category": "Soru",
+        "raw_response": "{'intent': 'Kargo', 'detail': 'Kargodaki gecikme nedeniyle teslimatın neden gelmediğini ve güncel kargo durumunu öğrenmek istiyor; tahmini teslimat tarihi için bilgi talep ediyor.', 'category': 'Soru'}",
+        "ground_truth_intent": "Kargo",
+        "ground_truth_detail": "Kargo gecikmesi",
+        "ground_truth_tur": "Sorun"
+      },
+      {
+        "chat_id": "90040",
+        "predicted_intent": "İade",
+        "predicted_detail": "İade sürecinin bu kadar uzun sürmesinin nedeni nedir? 10 gündür bekliyorum. İade numarası 123456 olan kargo depomuza ulaşmış durumda ve incelemede. Bankaya yansımadan önce 1-3 iş günü süreceği belirtilmişti; ancak şu anda 10 gün geçti ve net bir zaman bilgisi almak istiyorum.",
+        "predicted_category": "İade",
+        "raw_response": "{'intent': 'İade', 'detail': 'İade sürecinin bu kadar uzun sürmesinin nedeni nedir? 10 gündür bekliyorum. İade numarası 123456 olan kargo depomuza ulaşmış durumda ve incelemede. Bankaya yansımadan önce 1-3 iş günü süreceği belirtilmişti; ancak şu anda 10 gün geçti ve net bir zaman bilgisi almak istiyorum.', 'category': 'İade'}",
+        "ground_truth_intent": "İade",
+        "ground_truth_detail": "İade süreci gecikmesi",
+        "ground_truth_tur": "Şikayet"
+      }
+    ],
+    "accuracy": 95.0,
+    "total_analyzed": 40,
+    "successful": 40,
+    "errors": 0,
+    "correct_predictions": 38
+  },
+  "resolution_analysis": {
+    "results": [
+      {
+        "chat_id": "90001",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Eksik ürün sorunu için sipariş incelenip hata tespit edildi. Yeni ürünün en kısa sürede gönderileceği bilgisi verildi ve özür dilendi. Müşteri teşekkür etti; 'Harika, teşekkür ederim!' şeklindeki olumlu tepki çözüme işaret etti. Bu durumda bilgi verilmesi ve müşteri memnuniyetinin sağlanması nedeniyle çözüm kabul edildi.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': \"Eksik ürün sorunu için sipariş incelenip hata tespit edildi. Yeni ürünün en kısa sürede gönderileceği bilgisi verildi ve özür dilendi. Müşteri teşekkür etti; 'Harika, teşekkür ederim!' şeklindeki olumlu tepki çözüme işaret etti. Bu durumda bilgi verilmesi ve müşteri memnuniyetinin sağlanması nedeniyle çözüm kabul edildi.\", 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90002",
+        "predicted_resolution": "Çözülemedi",
+        "explanation": "Müşteri hesabına girişte sorun yaşıyor; şifre sıfırlama için link gelmiyor. Şu aşamada yalnızca spam klasör kontrolü önerildi; alternatif bir yöntem (SMS doğrulama, güvenlik soruları, manuel sıfırlama vb.) sunulmadı. Müşteri hâlâ çözüm bekliyor ve memnuniyet belirtisi yok. Sonraki adımlar için ek aksiyonlar gerekiyor (ör. hesap doğrulama ile manuel sıfırlama talebi, e-posta teslimat durumunun incelenmesi, geçici erişim yöntemi sağlanması).",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözülemedi', 'explanation': 'Müşteri hesabına girişte sorun yaşıyor; şifre sıfırlama için link gelmiyor. Şu aşamada yalnızca spam klasör kontrolü önerildi; alternatif bir yöntem (SMS doğrulama, güvenlik soruları, manuel sıfırlama vb.) sunulmadı. Müşteri hâlâ çözüm bekliyor ve memnuniyet belirtisi yok. Sonraki adımlar için ek aksiyonlar gerekiyor (ör. hesap doğrulama ile manuel sıfırlama talebi, e-posta teslimat durumunun incelenmesi, geçici erişim yöntemi sağlanması).', 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözülemedi"
+      },
+      {
+        "chat_id": "90003",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Bilgi verildi + müşteri teşekkür etti. Verilen iade bilgisi: iade süresi 14 gün; ürünü orijinal paketiyle iade etmek; iade kodu için sipariş numarası talep edilmesi. Müşteri 'Anladım, teşekkürler' dediği için çözüm kabul edildi.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': \"Bilgi verildi + müşteri teşekkür etti. Verilen iade bilgisi: iade süresi 14 gün; ürünü orijinal paketiyle iade etmek; iade kodu için sipariş numarası talep edilmesi. Müşteri 'Anladım, teşekkürler' dediği için çözüm kabul edildi.\", 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90004",
+        "predicted_resolution": "Çözülemedi",
+        "explanation": "Müşteri 'Hoş Geldin15' kuponunu kullanırken hata alıyor. Müşteri, kuponun geçerlilik koşullarını kontrol ettiğini ve sepette 200 TL olduğunu doğruladı. Bot daha önce farklı bir tarayıcı denemeyi ve önbelleği temizlemeyi önerdi; müşteri bu adımları zaten uyguladığını belirtti. Dolayısıyla şu aşamada somut bir çözüm alınamadı ve müşteri duruma karşı memnun değil. Çözüm sağlanamadığı için durum çözülemedi. Gelecek adım olarak, promosyon ekibiyle kuponun geçerliliğini/veri tabanında uygulanabilirliğini kontrol etmek, gerekirse kuponu manuel olarak uygulamak veya alternatif bir promosyon sunmak ve müşteriye net geri dönüş vermek önerilir.",
+        "confidence": "Orta",
+        "raw_response": "{'status': 'Çözülemedi', 'explanation': \"Müşteri 'Hoş Geldin15' kuponunu kullanırken hata alıyor. Müşteri, kuponun geçerlilik koşullarını kontrol ettiğini ve sepette 200 TL olduğunu doğruladı. Bot daha önce farklı bir tarayıcı denemeyi ve önbelleği temizlemeyi önerdi; müşteri bu adımları zaten uyguladığını belirtti. Dolayısıyla şu aşamada somut bir çözüm alınamadı ve müşteri duruma karşı memnun değil. Çözüm sağlanamadığı için durum çözülemedi. Gelecek adım olarak, promosyon ekibiyle kuponun geçerliliğini/veri tabanında uygulanabilirliğini kontrol etmek, gerekirse kuponu manuel olarak uygulamak veya alternatif bir promosyon sunmak ve müşteriye net geri dönüş vermek önerilir.\", 'confidence': 'Orta'}",
+        "ground_truth": "Çözülemedi"
+      },
+      {
+        "chat_id": "90005",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Sipariş iptal edildi ve iade süreciyle ilgili bilgi verildi. Müşteri teşekkür ettiği için çözüm kabul edildi.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': 'Sipariş iptal edildi ve iade süreciyle ilgili bilgi verildi. Müşteri teşekkür ettiği için çözüm kabul edildi.', 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90006",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Müşteriye iade süreciyle ilgili bilgi verildi: takip kodu paylaşıldı ve iadenin 2 gün içinde teslim alınacağı belirtildi. Müşteri teşekkür etti ve bilgiye memnun kaldığı için çözüm kabul edildi.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': 'Müşteriye iade süreciyle ilgili bilgi verildi: takip kodu paylaşıldı ve iadenin 2 gün içinde teslim alınacağı belirtildi. Müşteri teşekkür etti ve bilgiye memnun kaldığı için çözüm kabul edildi.', 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90007",
+        "predicted_resolution": "Çözülemedi",
+        "explanation": "Kullanıcı defolu ürün için iade/ değişim talebinde bulundu ancak 'defolu için fotoğraflı kanıt gerekir' yanıtı verildi ve müşteri fotoğraf çekememediğini belirtti. Alternatif kanıt veya yol (video, e-posta ile kanıt, başka bir doğrulama yöntemi) sunulmadığı için işlemin geçmesi ve müşterinin memnuniyetinin sağlanması için somut adım atılmadı. Bu durumda sorun devam etmekte; müşteri tatmin olmamış durumda ve ek çözüm önerileri sunulmalı (alternatif kanıt seçenekleri, süreçte yönlendirme veya insan temasına geçiş).",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözülemedi', 'explanation': \"Kullanıcı defolu ürün için iade/ değişim talebinde bulundu ancak 'defolu için fotoğraflı kanıt gerekir' yanıtı verildi ve müşteri fotoğraf çekememediğini belirtti. Alternatif kanıt veya yol (video, e-posta ile kanıt, başka bir doğrulama yöntemi) sunulmadığı için işlemin geçmesi ve müşterinin memnuniyetinin sağlanması için somut adım atılmadı. Bu durumda sorun devam etmekte; müşteri tatmin olmamış durumda ve ek çözüm önerileri sunulmalı (alternatif kanıt seçenekleri, süreçte yönlendirme veya insan temasına geçiş).\", 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözülemedi"
+      },
+      {
+        "chat_id": "90008",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Çözüm durumu: Çözüldü. Neden: Müşteriye hesap güncelleme adımlarını (Hesabım sayfası > Bilgilerimi Düzenle) açıklandı ve gerekli bilgi verildi. Müşteri teşekkür etti ve 'deneyeceğim' ifadesiyle çözüme onay verdi. Bu nedenle çözüm kabul edildi.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': \"Çözüm durumu: Çözüldü. Neden: Müşteriye hesap güncelleme adımlarını (Hesabım sayfası > Bilgilerimi Düzenle) açıklandı ve gerekli bilgi verildi. Müşteri teşekkür etti ve 'deneyeceğim' ifadesiyle çözüme onay verdi. Bu nedenle çözüm kabul edildi.\", 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90009",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Bot, faturadaki hatayı düzelterek yeni faturayı göndereceğini bildirdi ve müşteri teşekkür etti. Bilgi/veri paylaşımı ve müşteri memnuniyeti ifadesi birleşince çözüm kabul edilmiş sayılır.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': 'Bot, faturadaki hatayı düzelterek yeni faturayı göndereceğini bildirdi ve müşteri teşekkür etti. Bilgi/veri paylaşımı ve müşteri memnuniyeti ifadesi birleşince çözüm kabul edilmiş sayılır.', 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90010",
+        "predicted_resolution": "Çözülemedi",
+        "explanation": "Kullanıcı iptal talebinde bulundu ancak sipariş kargoya verildiği için iptal butonu görünmüyor ve mevcut durumda iade süreci uygulanması gerektiği belirtildi. Bot şu ana kadar somut bir çözüm (iptal onayı, iade başlatma gibi) sunmadı ve müşteri hizmetlerinden memnuniyetini ifade etmedi; müşteri “çok kötü bir hizmet” diyerek tatmin olmadığını gösteriyor. Bilgi verilmiş olsa da müşteriden teşekkür/anlayış ifadesi veya onay/tekrarlama gibi çözüm kabul göstergesi bulunmuyor. Bu nedenle durum çözüm olarak kaydedilmedi.",
+        "confidence": "Orta",
+        "raw_response": "{'status': 'Çözülemedi', 'explanation': 'Kullanıcı iptal talebinde bulundu ancak sipariş kargoya verildiği için iptal butonu görünmüyor ve mevcut durumda iade süreci uygulanması gerektiği belirtildi. Bot şu ana kadar somut bir çözüm (iptal onayı, iade başlatma gibi) sunmadı ve müşteri hizmetlerinden memnuniyetini ifade etmedi; müşteri “çok kötü bir hizmet” diyerek tatmin olmadığını gösteriyor. Bilgi verilmiş olsa da müşteriden teşekkür/anlayış ifadesi veya onay/tekrarlama gibi çözüm kabul göstergesi bulunmuyor. Bu nedenle durum çözüm olarak kaydedilmedi.', 'confidence': 'Orta'}",
+        "ground_truth": "Çözülemedi"
+      },
+      {
+        "chat_id": "90011",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Kullanıcı stok durumu hakkında bilgilendirildi: AB-456 ürünü için henüz stok yenileme tarihi belirlenmemiş. Müşteri 'Anladım. Teşekkürler yine de.' dediği için bilgi verildi ve müşteri memnun kaldı. Bu nedenle çözüm kabul edildi.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': \"Kullanıcı stok durumu hakkında bilgilendirildi: AB-456 ürünü için henüz stok yenileme tarihi belirlenmemiş. Müşteri 'Anladım. Teşekkürler yine de.' dediği için bilgi verildi ve müşteri memnun kaldı. Bu nedenle çözüm kabul edildi.\", 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90012",
+        "predicted_resolution": "Çözülemedi",
+        "explanation": "Müşteri iki kez çekim yapıldığını bildirdi ancak banka ekstresi kanıtı sunamadığı için durum çözümlenemedi. Ayrıca müşteri bir müşteri temsilcisiyle görüşmek istediğini belirtti; şu anda canlı destek bağlantısı sağlanmadı. Aşılması gereken adımlar: 1) Müşteriyi canlı müşteri temsilcisine bağlamak; 2) Çift çekim olduğunu doğrulamak için sipariş numarası, işlem tarihi/saat, çekim tutarı, banka adı ve mümkünse işlem referans numarası gibi bilgileri toplamak; 3) Ekran görüntüsü veya alternatif kanıtlar mevcut değilse bile işlem bilgilerinin toplanmasına çalışmak; 4) Gerekirse iade/inceleme süreçlerini başlatmak ve müşteriye süreç hakkında bilgi vermek.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözülemedi', 'explanation': 'Müşteri iki kez çekim yapıldığını bildirdi ancak banka ekstresi kanıtı sunamadığı için durum çözümlenemedi. Ayrıca müşteri bir müşteri temsilcisiyle görüşmek istediğini belirtti; şu anda canlı destek bağlantısı sağlanmadı. Aşılması gereken adımlar: 1) Müşteriyi canlı müşteri temsilcisine bağlamak; 2) Çift çekim olduğunu doğrulamak için sipariş numarası, işlem tarihi/saat, çekim tutarı, banka adı ve mümkünse işlem referans numarası gibi bilgileri toplamak; 3) Ekran görüntüsü veya alternatif kanıtlar mevcut değilse bile işlem bilgilerinin toplanmasına çalışmak; 4) Gerekirse iade/inceleme süreçlerini başlatmak ve müşteriye süreç hakkında bilgi vermek.', 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözülemedi"
+      },
+      {
+        "chat_id": "90013",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Siparişin bugün kargoya verileceği bilgisi paylaşıldı ve takip numarasının e-posta ile gönderileceği belirtildi. Müşteri teşekkür etti, bu durumda çözüm kabulü olarak değerlendirildi.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': 'Siparişin bugün kargoya verileceği bilgisi paylaşıldı ve takip numarasının e-posta ile gönderileceği belirtildi. Müşteri teşekkür etti, bu durumda çözüm kabulü olarak değerlendirildi.', 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90014",
+        "predicted_resolution": "Çözülemedi",
+        "explanation": "Müşteri kredi kartı reddinin nedenini öğrenmek istiyor. Bot güvenlik nedeniyle nedeni göremediğini söyledi ve bankayla görüşmesini önerdi. Bu durumda somut aksiyon alınmadı ve müşteri memnuniyetsiz; net adım veya çözüm sağlanmadı. Bilgi olarak bankayla iletişim önerisi verildi, ancak müşteri teşekkür etmedi ve olumlu geri dönüş olmadı; bu nedenle çözüm sağlanmadı.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözülemedi', 'explanation': 'Müşteri kredi kartı reddinin nedenini öğrenmek istiyor. Bot güvenlik nedeniyle nedeni göremediğini söyledi ve bankayla görüşmesini önerdi. Bu durumda somut aksiyon alınmadı ve müşteri memnuniyetsiz; net adım veya çözüm sağlanmadı. Bilgi olarak bankayla iletişim önerisi verildi, ancak müşteri teşekkür etmedi ve olumlu geri dönüş olmadı; bu nedenle çözüm sağlanmadı.', 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözülemedi"
+      },
+      {
+        "chat_id": "90015",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Kullanıcı beden tablosunu buldu ve sorun çözüldü. Bot yönlendirmesiyle ürün sayfasında 'Beden Tablosu' bilgisi bulunabildi; kullanıcı 'Tamam, buldum şimdi' diyerek çatışmayı çözdüğünü ve çözümü kabul etti. Bu durumda bilgi sağlanmış ve kullanıcı memnun kaldı olarak değerlendiriliyor.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': \"Kullanıcı beden tablosunu buldu ve sorun çözüldü. Bot yönlendirmesiyle ürün sayfasında 'Beden Tablosu' bilgisi bulunabildi; kullanıcı 'Tamam, buldum şimdi' diyerek çatışmayı çözdüğünü ve çözümü kabul etti. Bu durumda bilgi sağlanmış ve kullanıcı memnun kaldı olarak değerlendiriliyor.\", 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90016",
+        "predicted_resolution": "Çözülemedi",
+        "explanation": "Adres hatası için şu anda net bir çözüm sağlanamadı. Sipariş kargoya verilmiş olduğundan müşteri kargo firmasıyla iletişime geçme yönlendirilmiş durumda ve bu durumda müşteri için tatmin edici bir çözüm elde edilmedi; müşteri memnun olmayıp şikayetini sürdürmektedir.",
+        "confidence": "Orta",
+        "raw_response": "{'status': 'Çözülemedi', 'explanation': 'Adres hatası için şu anda net bir çözüm sağlanamadı. Sipariş kargoya verilmiş olduğundan müşteri kargo firmasıyla iletişime geçme yönlendirilmiş durumda ve bu durumda müşteri için tatmin edici bir çözüm elde edilmedi; müşteri memnun olmayıp şikayetini sürdürmektedir.', 'confidence': 'Orta'}",
+        "ground_truth": "Çözülemedi"
+      },
+      {
+        "chat_id": "90017",
+        "predicted_resolution": "Çözülemedi",
+        "explanation": "Müşteri, yorumunun hangi kurala aykırı olduğunun açıklanmasını talep ediyor. Mevcut konuşmada bot, genel bir açıklama sunmuş olsa da spesifik hangi kuralın ihlal edildiğini belirtmemiş ve müşteri hâlâ sinirli şekilde cevap veriyor. Şu ana kadar somut bir aksiyon (açıklama sağlanması, karar/geri dönüş) alınmadı; müşteri tatmin olmamış durumda. Çözüm için önerilen adımlar: 1) Müşteriyle hangi kurallara göre inceleme yapıldığını ve hangi özel kuralın ihlal edildiğini net olarak belirtin; 2) Gerekirse genel içerik moderasyon kurallarını kısa ve anlaşılır bir özet olarak paylaşın ve örnekler verin; 3) Gerekirse moderasyon ekibiyle inceleme yapıp net cevap verin; 4) Müşteriye sakin bir dille destek verin ve sürecin nasıl işleyeceğini adım adım anlatın.",
+        "confidence": "Orta",
+        "raw_response": "{'status': 'Çözülemedi', 'explanation': 'Müşteri, yorumunun hangi kurala aykırı olduğunun açıklanmasını talep ediyor. Mevcut konuşmada bot, genel bir açıklama sunmuş olsa da spesifik hangi kuralın ihlal edildiğini belirtmemiş ve müşteri hâlâ sinirli şekilde cevap veriyor. Şu ana kadar somut bir aksiyon (açıklama sağlanması, karar/geri dönüş) alınmadı; müşteri tatmin olmamış durumda. Çözüm için önerilen adımlar: 1) Müşteriyle hangi kurallara göre inceleme yapıldığını ve hangi özel kuralın ihlal edildiğini net olarak belirtin; 2) Gerekirse genel içerik moderasyon kurallarını kısa ve anlaşılır bir özet olarak paylaşın ve örnekler verin; 3) Gerekirse moderasyon ekibiyle inceleme yapıp net cevap verin; 4) Müşteriye sakin bir dille destek verin ve sürecin nasıl işleyeceğini adım adım anlatın.', 'confidence': 'Orta'}",
+        "ground_truth": "Çözülemedi"
+      },
+      {
+        "chat_id": "90018",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Kullanıcı 'Anladım. Teşekkürler.' dediği için çözüm kabul edildi olarak değerlendiriyoruz. Ayrıca teknik ekibin hatayı çözeceği bilgisi paylaşıldı ve müşteri teşekkür etti.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': \"Kullanıcı 'Anladım. Teşekkürler.' dediği için çözüm kabul edildi olarak değerlendiriyoruz. Ayrıca teknik ekibin hatayı çözeceği bilgisi paylaşıldı ve müşteri teşekkür etti.\", 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90019",
+        "predicted_resolution": "Çözülemedi",
+        "explanation": "Kullanıcının ödemesi hesabından çekildiği halde siparişler sayfasında görünmüyor ve iade/geri ödeme süreciyle ilgili net aksiyon alınmadı. Verilen yanıt sadece “bir süre bekleyin” şeklinde belirsiz bir çözüm sunuyor; müşterinin para iadesi talebi karşılanmadı ve konu çözümlenmedi. Bir sonraki adım olarak sipariş ile ödeme bilgisinin doğrulanması, iade/geri ödeme sürecinin başlatılması veya müşteriye net ETA/veri paylaşımı yapılması gerekir. Ayrıca müşteriye hangi adımları izlemeleri gerektiği konusunda yönlendirme verilmeli ve mümkünse bir çözüm takibi sağlanmalı.",
+        "confidence": "Orta",
+        "raw_response": "{'status': 'Çözülemedi', 'explanation': 'Kullanıcının ödemesi hesabından çekildiği halde siparişler sayfasında görünmüyor ve iade/geri ödeme süreciyle ilgili net aksiyon alınmadı. Verilen yanıt sadece “bir süre bekleyin” şeklinde belirsiz bir çözüm sunuyor; müşterinin para iadesi talebi karşılanmadı ve konu çözümlenmedi. Bir sonraki adım olarak sipariş ile ödeme bilgisinin doğrulanması, iade/geri ödeme sürecinin başlatılması veya müşteriye net ETA/veri paylaşımı yapılması gerekir. Ayrıca müşteriye hangi adımları izlemeleri gerektiği konusunda yönlendirme verilmeli ve mümkünse bir çözüm takibi sağlanmalı.', 'confidence': 'Orta'}",
+        "ground_truth": "Çözülemedi"
+      },
+      {
+        "chat_id": "90020",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Müşteri kumaş bilgisi istedi. Ürün açıklamasında bu bilginin bulunduğu bilgisi verildi ve müşteri bunu teyit ederek teşekkür etti. Bilgi verme + teşekkür = Çözüm kabul edildi. Bu nedenle durum Çözüldü olarak değerlendirildi.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': 'Müşteri kumaş bilgisi istedi. Ürün açıklamasında bu bilginin bulunduğu bilgisi verildi ve müşteri bunu teyit ederek teşekkür etti. Bilgi verme + teşekkür = Çözüm kabul edildi. Bu nedenle durum Çözüldü olarak değerlendirildi.', 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90021",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Müşteri eksik promosyon ürünleri için sipariş numarasını verdi; bot eksik ürünlerin en kısa sürede kargoya verileceğini bildirdi ve özür diledi. Müşteri 'Çok teşekkür ederim, hızlı çözüm için' dedi; Bu bilgi verme + teşekkür kombinasyonu olduğundan çözüm kabul edildi.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': \"Müşteri eksik promosyon ürünleri için sipariş numarasını verdi; bot eksik ürünlerin en kısa sürede kargoya verileceğini bildirdi ve özür diledi. Müşteri 'Çok teşekkür ederim, hızlı çözüm için' dedi; Bu bilgi verme + teşekkür kombinasyonu olduğundan çözüm kabul edildi.\", 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90022",
+        "predicted_resolution": "Çözülemedi",
+        "explanation": "Müşteri siparişini iptal ettiğini ve yaklaşık bir haftadır iadesinin banka hesabına geçmesini beklediğini belirtti. Bot ise yalnızca iade süresinin 1-5 iş günlüğü olduğunu bildirdi ve süreçle ilgili herhangi bir aksiyon (iade durumunun kontrolü, finansla iletişime geçilmesi veya iade işleminin hızlandırılması gibi) sunmadı. Bu nedenle durum çözümlenmedi; müşteri hala iadesinin gerçekleşmediğinden şikayetçi ve memnun değil. Yapılması gerekenler: iade kaydını ve iptal durumunu doğrulayın, iade durumunu finansla teyit edin/yeniden tetikleyin ve müşteriye net bir gün/çözüm bilgisi verin, gerekiyorsa özrünüzü ve telafi adımlarını iletin.",
+        "confidence": "Orta",
+        "raw_response": "{'status': 'Çözülemedi', 'explanation': 'Müşteri siparişini iptal ettiğini ve yaklaşık bir haftadır iadesinin banka hesabına geçmesini beklediğini belirtti. Bot ise yalnızca iade süresinin 1-5 iş günlüğü olduğunu bildirdi ve süreçle ilgili herhangi bir aksiyon (iade durumunun kontrolü, finansla iletişime geçilmesi veya iade işleminin hızlandırılması gibi) sunmadı. Bu nedenle durum çözümlenmedi; müşteri hala iadesinin gerçekleşmediğinden şikayetçi ve memnun değil. Yapılması gerekenler: iade kaydını ve iptal durumunu doğrulayın, iade durumunu finansla teyit edin/yeniden tetikleyin ve müşteriye net bir gün/çözüm bilgisi verin, gerekiyorsa özrünüzü ve telafi adımlarını iletin.', 'confidence': 'Orta'}",
+        "ground_truth": "Çözülemedi"
+      },
+      {
+        "chat_id": "90023",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Müşteri hasar bildirimi iletti; kargo kaynaklı olduğunu düşündüğünü belirtti. Sipariş numarası 78965412 ve hasarlı fotoğrafı iletildi. Fotoğraf incelendi ve hasarlı ürünün en kısa sürede yenisiyle değiştirilmesi bilgisi verildi; süreç hakkında bilgilendirme yapıldı ve müşteri teşekkür etti. Bu nedenle çözüm kabul edildi.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': 'Müşteri hasar bildirimi iletti; kargo kaynaklı olduğunu düşündüğünü belirtti. Sipariş numarası 78965412 ve hasarlı fotoğrafı iletildi. Fotoğraf incelendi ve hasarlı ürünün en kısa sürede yenisiyle değiştirilmesi bilgisi verildi; süreç hakkında bilgilendirme yapıldı ve müşteri teşekkür etti. Bu nedenle çözüm kabul edildi.', 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90024",
+        "predicted_resolution": "Çözülemedi",
+        "explanation": "Müşteri değiştirme (exchange) talebini net şekilde yanıtlanmadı. Bot, iade sürecini başlatarak yeniden sipariş önerdi, ancak mevcutta exchange seçeneğinin olup olmadığını belirtmedi ve müşterinin sorusuna doğrudan cevap verilmedi. Ardından müşteri zahmetli olduğunu belirtti ve çözüm için somut bir aksiyon ya da yönlendirme almadı. Bu nedenle çözüm sağlanamadı.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözülemedi', 'explanation': 'Müşteri değiştirme (exchange) talebini net şekilde yanıtlanmadı. Bot, iade sürecini başlatarak yeniden sipariş önerdi, ancak mevcutta exchange seçeneğinin olup olmadığını belirtmedi ve müşterinin sorusuna doğrudan cevap verilmedi. Ardından müşteri zahmetli olduğunu belirtti ve çözüm için somut bir aksiyon ya da yönlendirme almadı. Bu nedenle çözüm sağlanamadı.', 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözülemedi"
+      },
+      {
+        "chat_id": "90025",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Kampanyalar ana sayfa ve e-posta bülteni üzerinden erişilebilir olduğu bilgisi verildi. Müşteri 'Tamam, kontrol edeceğim. Teşekkürler' diyerek çözümü kabul etti.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': \"Kampanyalar ana sayfa ve e-posta bülteni üzerinden erişilebilir olduğu bilgisi verildi. Müşteri 'Tamam, kontrol edeceğim. Teşekkürler' diyerek çözümü kabul etti.\", 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90026",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Müşteri yanlış gelen ürünü bildirdi, sipariş numarası ve fotoğraf ile teyit edildi. Bot, doğru ürünün en kısa sürede gönderileceğini ve yanlış ürünün kargo ile ücretsiz iade edilebileceğini belirtti. Müşteri 'çok iyi, teşekkür ederim' diyerek memnuniyet ifade etti, çözüm kabul edildi.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': \"Müşteri yanlış gelen ürünü bildirdi, sipariş numarası ve fotoğraf ile teyit edildi. Bot, doğru ürünün en kısa sürede gönderileceğini ve yanlış ürünün kargo ile ücretsiz iade edilebileceğini belirtti. Müşteri 'çok iyi, teşekkür ederim' diyerek memnuniyet ifade etti, çözüm kabul edildi.\", 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90027",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Bilgi/verme: Bot hesap kapatma adımını açıkladı ('Hesabımı Kapat' butonu ile kapatabilirsiniz). Müşteri 'Anladım, teşekkürler' dedi, yani bilgi alındı ve teşekkür edildi. Bu durumda Bilgi verildi + teşekkür = Çözüm kabul edildi.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': \"Bilgi/verme: Bot hesap kapatma adımını açıkladı ('Hesabımı Kapat' butonu ile kapatabilirsiniz). Müşteri 'Anladım, teşekkürler' dedi, yani bilgi alındı ve teşekkür edildi. Bu durumda Bilgi verildi + teşekkür = Çözüm kabul edildi.\", 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90028",
+        "predicted_resolution": "Çözülemedi",
+        "explanation": "Ürün stokta olmadığı için siparişte eksik çıktı ve iade süreci bilgisi verildi. Müşteri ise iade istememekte, ürünü hemen almak istiyor. Şu aşamada somut bir aksiyon (örneğin backorder/bekleme listesi, alternatif ürün önerisi veya stok geldiğinde öncelikli gönderim) uygulanmadı; müşteri talebine doğrudan çözüm sunulmadığı için durum çözümlenmedi olarak kalıyor.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözülemedi', 'explanation': 'Ürün stokta olmadığı için siparişte eksik çıktı ve iade süreci bilgisi verildi. Müşteri ise iade istememekte, ürünü hemen almak istiyor. Şu aşamada somut bir aksiyon (örneğin backorder/bekleme listesi, alternatif ürün önerisi veya stok geldiğinde öncelikli gönderim) uygulanmadı; müşteri talebine doğrudan çözüm sunulmadığı için durum çözümlenmedi olarak kalıyor.', 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözülemedi"
+      },
+      {
+        "chat_id": "90029",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "İade kodunun süresi dolmuş olduğu için yeni bir iade kodu oluşturuldu: ABC-5678. Müşteriye gerekli bilgi verildi ve sorun çözüldü; müşteri “Harika! Çok teşekkürler.” diyerek memnuniyetini ifade etti.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': 'İade kodunun süresi dolmuş olduğu için yeni bir iade kodu oluşturuldu: ABC-5678. Müşteriye gerekli bilgi verildi ve sorun çözüldü; müşteri “Harika! Çok teşekkürler.” diyerek memnuniyetini ifade etti.', 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90030",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Müşteri, sipariş henüz kargoya verilmediğini belirtti ve adresini hesap üzerinden güncelleyebileceğini öğrendi. Ayrıca kargoya verme süresi hakkında bilgi verildi ve müşteri teşekkür etti. Teşekkür etmesi, çözümün kabul edildiğini gösterir. Bu nedenle bilgi verme/ yönlendirme ile sorun çözüldü.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': 'Müşteri, sipariş henüz kargoya verilmediğini belirtti ve adresini hesap üzerinden güncelleyebileceğini öğrendi. Ayrıca kargoya verme süresi hakkında bilgi verildi ve müşteri teşekkür etti. Teşekkür etmesi, çözümün kabul edildiğini gösterir. Bu nedenle bilgi verme/ yönlendirme ile sorun çözüldü.', 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90031",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Sipariş durumuyla ilgili bilgi verildi: kargoya verilmiş ve yolda, tahmini teslimat 3-4 gün olarak belirtildi. Müşteri teşekkür etti ('Tamam, çok sağolun'), bu durumda çözüm kabul edildi.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': \"Sipariş durumuyla ilgili bilgi verildi: kargoya verilmiş ve yolda, tahmini teslimat 3-4 gün olarak belirtildi. Müşteri teşekkür etti ('Tamam, çok sağolun'), bu durumda çözüm kabul edildi.\", 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90032",
+        "predicted_resolution": "Çözülemedi",
+        "explanation": "Müşteri ödeme çekilmediğini belirtti ve siparişin tamamlanmadığı görüldü. Bot şu an için sadece 'tekrar deneyin' diye yönlendirdi ve müşteri 'Ne yapabilirim?' diye net bir çözüm talep etti. Şu anda somut bir aksiyon/adım uygulanmadı. İzlenebilecek adımlar: ödeme sayfasını yeniden yükleyip işlemi yeniden başlatmak, farklı ödeme yöntemi denemek, banka/finans kurulu ile iletişime geçip işlem engellerini kontrol etmek, sipariş durumunu tekrar kontrol etmek için destekle iletişime geçmek. Bu adımlar uygulanırsa süreç çözülebilir.",
+        "confidence": "Orta",
+        "raw_response": "{'status': 'Çözülemedi', 'explanation': \"Müşteri ödeme çekilmediğini belirtti ve siparişin tamamlanmadığı görüldü. Bot şu an için sadece 'tekrar deneyin' diye yönlendirdi ve müşteri 'Ne yapabilirim?' diye net bir çözüm talep etti. Şu anda somut bir aksiyon/adım uygulanmadı. İzlenebilecek adımlar: ödeme sayfasını yeniden yükleyip işlemi yeniden başlatmak, farklı ödeme yöntemi denemek, banka/finans kurulu ile iletişime geçip işlem engellerini kontrol etmek, sipariş durumunu tekrar kontrol etmek için destekle iletişime geçmek. Bu adımlar uygulanırsa süreç çözülebilir.\", 'confidence': 'Orta'}",
+        "ground_truth": "Çözülemedi"
+      },
+      {
+        "chat_id": "90033",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "İade süreci başlatıldı, iade kodu oluşturuldu ve kargoya ücretsiz iade seçeneği sunuldu. Müşteri bilgi aldı ve teşekkür etti; çözüm bilgisi verildi. Bu durumda müşteri teşekkür ettiği için çözüm kabul edildi.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': 'İade süreci başlatıldı, iade kodu oluşturuldu ve kargoya ücretsiz iade seçeneği sunuldu. Müşteri bilgi aldı ve teşekkür etti; çözüm bilgisi verildi. Bu durumda müşteri teşekkür ettiği için çözüm kabul edildi.', 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90034",
+        "predicted_resolution": "Çözülemedi",
+        "explanation": "Kullanıcının kupon kodunun çalışmamasıyla ilgili somut bir çözüm sunulmadı. Yapılan kontroller sistemde sorun görünmediğini gösterse de kullanıcıya net adımlar (yeniden deneme önerisi, kuponun geçerlilik/kriterlerinin somut kontrolü, manuel uygulama/teknik destek yönlendirmesi vb.) verilmedi ve müşteri hâlâ çözüm bekliyor.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözülemedi', 'explanation': 'Kullanıcının kupon kodunun çalışmamasıyla ilgili somut bir çözüm sunulmadı. Yapılan kontroller sistemde sorun görünmediğini gösterse de kullanıcıya net adımlar (yeniden deneme önerisi, kuponun geçerlilik/kriterlerinin somut kontrolü, manuel uygulama/teknik destek yönlendirmesi vb.) verilmedi ve müşteri hâlâ çözüm bekliyor.', 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözülemedi"
+      },
+      {
+        "chat_id": "90035",
+        "predicted_resolution": "Çözülemedi",
+        "explanation": "Müşteri halen şikayet halinde ve çözüm için tatmin edici bir aksiyon alınmamış. Bot yalnızca 'biraz bekleyin' şeklinde belirsiz bir yanıt verdi; net ETA, yeni takip bilgisi veya kargo firmasıyla durum güncellemesi gibi somut adım reddedilmedi ancak şu anda müşteri memnuniyetsizliğini gideren bir çözüm sunulmadı. Prosedür/etkileşim yönlendirmesi (örneğin hangi adımları atacağı) ve açık zaman çerçevesi sağlanmalı; aksi halde müşteri çözümü kabul etmedi. En uygun ilerleme: kargo firmasıyla iletişime geçip net teslimat bilgisi/ETA paylaşmak veya müşteri talebine uygun çözüm sunmak (yeniden takip numarası, iade/geri ödeme seçenekleri vb.).",
+        "confidence": "Orta",
+        "raw_response": "{'status': 'Çözülemedi', 'explanation': \"Müşteri halen şikayet halinde ve çözüm için tatmin edici bir aksiyon alınmamış. Bot yalnızca 'biraz bekleyin' şeklinde belirsiz bir yanıt verdi; net ETA, yeni takip bilgisi veya kargo firmasıyla durum güncellemesi gibi somut adım reddedilmedi ancak şu anda müşteri memnuniyetsizliğini gideren bir çözüm sunulmadı. Prosedür/etkileşim yönlendirmesi (örneğin hangi adımları atacağı) ve açık zaman çerçevesi sağlanmalı; aksi halde müşteri çözümü kabul etmedi. En uygun ilerleme: kargo firmasıyla iletişime geçip net teslimat bilgisi/ETA paylaşmak veya müşteri talebine uygun çözüm sunmak (yeniden takip numarası, iade/geri ödeme seçenekleri vb.).\", 'confidence': 'Orta'}",
+        "ground_truth": "Çözülemedi"
+      },
+      {
+        "chat_id": "90036",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Sipariş iptal talebi kargoya verilmeden işleme alınmış ve iptal edilmiştir. Müşteri teşekkür etti, bu da çözümün kabul edildiğini gösterir.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': 'Sipariş iptal talebi kargoya verilmeden işleme alınmış ve iptal edilmiştir. Müşteri teşekkür etti, bu da çözümün kabul edildiğini gösterir.', 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90037",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Müşteriye teknik servise gönderim gerektiği bilgisi verildi ve gönderim detayları için e-posta paylaşılması istendi. Bilgi verildi + müşteri teşekkür etti (〝Tamam, teşekkürler〟), bu durum Çözüldü olarak kabul edilir.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': 'Müşteriye teknik servise gönderim gerektiği bilgisi verildi ve gönderim detayları için e-posta paylaşılması istendi. Bilgi verildi + müşteri teşekkür etti (〝Tamam, teşekkürler〟), bu durum Çözüldü olarak kabul edilir.', 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90038",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Kullanıcıya e-posta bülteninden çıkma için alt kısımdaki abonelikten çık linkinin kullanılması gerektiğini söyledik. Kullanıcı 'Anladım. Teşekkürler.' dediği için bilgi verilmesi ve memnuniyetiyle çözüm kabul edildi.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': \"Kullanıcıya e-posta bülteninden çıkma için alt kısımdaki abonelikten çık linkinin kullanılması gerektiğini söyledik. Kullanıcı 'Anladım. Teşekkürler.' dediği için bilgi verilmesi ve memnuniyetiyle çözüm kabul edildi.\", 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90039",
+        "predicted_resolution": "Çözüldü",
+        "explanation": "Kargo firmasıyla iletişime geçildi ve gecikme yaşandığı bilgisi paylaşıldı; teslimatın yarın yapılacağı belirtildi. Müşteri 'Tamam, teşekkürler. Artık yarın gelsin.' diyerek onayladı ve teşekkür etti.",
+        "confidence": "Yüksek",
+        "raw_response": "{'status': 'Çözüldü', 'explanation': \"Kargo firmasıyla iletişime geçildi ve gecikme yaşandığı bilgisi paylaşıldı; teslimatın yarın yapılacağı belirtildi. Müşteri 'Tamam, teşekkürler. Artık yarın gelsin.' diyerek onayladı ve teşekkür etti.\", 'confidence': 'Yüksek'}",
+        "ground_truth": "Çözüldü"
+      },
+      {
+        "chat_id": "90040",
+        "predicted_resolution": "Çözülemedi",
+        "explanation": "Müşterinin iade süreci 10 gündür sürüyor ve şu ana kadar somut bir çözüm/ aksiyon alınmış gibi görünmüyor. Bot, iadenin 1-3 iş günü içinde bankaya yansımasının sürebileceğini belirtmiş olsa da müşteri hâlâ bekliyor ve 'artık yeter' şeklinde memnuniyetsizliğini ifade ediyor. Bilgi verilmiş olsa da güncel durum için net bir güncelleme veya hızlandırma adımı müşteriye sunulmadı. Bu nedenle durum çözümsüz olarak değerlendiriliyor ve süreçte güncelleme/ekip müdahalesi gerektiriyor.",
+        "confidence": "Orta",
+        "raw_response": "{'status': 'Çözülemedi', 'explanation': \"Müşterinin iade süreci 10 gündür sürüyor ve şu ana kadar somut bir çözüm/ aksiyon alınmış gibi görünmüyor. Bot, iadenin 1-3 iş günü içinde bankaya yansımasının sürebileceğini belirtmiş olsa da müşteri hâlâ bekliyor ve 'artık yeter' şeklinde memnuniyetsizliğini ifade ediyor. Bilgi verilmiş olsa da güncel durum için net bir güncelleme veya hızlandırma adımı müşteriye sunulmadı. Bu nedenle durum çözümsüz olarak değerlendiriliyor ve süreçte güncelleme/ekip müdahalesi gerektiriyor.\", 'confidence': 'Orta'}",
+        "ground_truth": "Çözülemedi"
+      }
+    ],
+    "accuracy": 100.0,
+    "total_analyzed": 40,
+    "successful": 40,
+    "errors": 0,
+    "correct_predictions": 40
+  }
+}
