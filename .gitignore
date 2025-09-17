@@ -8,7 +8,8 @@ api_keys.txt
 # OpenAI API Keys (specific patterns)
 *api_key*
 *API_KEY*
-*openai*
+*openai_key*
+*OPENAI_KEY*
 sk-*
 
 # Python

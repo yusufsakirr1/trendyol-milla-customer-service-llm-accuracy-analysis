@@ -32,7 +32,7 @@ This project evaluates Large Language Model performance across three critical cu
 ```
 ├── data_preprocessing.ipynb             # Data preprocessing pipeline
 ├── openai_analysis_updated.ipynb       # Initial analysis (sample)
-├── openai_analysis_full_40.ipynb       # Full dataset analysis (DELETED - merged to main)
+├── openai_analysis_full_40.ipynb       # Full dataset analysis (MAIN ANALYSIS)
 ├── prepared_data.json                  # Processed conversation data
 ├── 20-sohbet-trendyol-mila.json        # Original conversation data
 ├── openai_analysis_complete_40_chats.json    # Complete analysis results
@@ -94,7 +94,8 @@ This project evaluates Large Language Model performance across three critical cu
 
 2. **Run the analysis notebooks in order:**
    - `data_preprocessing.ipynb` - Data preprocessing pipeline
-   - `openai_analysis_updated.ipynb` - Complete 40-chat analysis with structured output
+   - `openai_analysis_full_40.ipynb` - **MAIN ANALYSIS** - Complete 40-chat analysis with structured output
+   - `openai_analysis_updated.ipynb` - Initial sample analysis (optional)
    - `musteri_talepleri_analizi.ipynb` - Customer demand analysis and visualization
 
 3. **View results in the project folder:**
