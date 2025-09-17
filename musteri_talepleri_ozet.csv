@@ -1,0 +1,26 @@
+Intent,Sohbet_Sayisi,Yuzde
+İade,5,12.5
+Ödeme,4,10.0
+Eksik ürün,3,7.5
+Kargo,3,7.5
+İptal,3,7.5
+Adres hatası,2,5.0
+Kupon,2,5.0
+Hesap bilgisi,1,2.5
+Hasarlı ürün,1,2.5
+Teknik sorun,1,2.5
+Beden,1,2.5
+Sipariş,1,2.5
+Hesap kapatma,1,2.5
+Yanlış ürün,1,2.5
+İndirim,1,2.5
+Değişim,1,2.5
+Ürün,1,2.5
+Fatura hatası,1,2.5
+Web sitesi,1,2.5
+Yorum,1,2.5
+Şifre sıfırlama,1,2.5
+Beden tablosu,1,2.5
+Defolu ürün,1,2.5
+Stok,1,2.5
+Abonelik,1,2.5
