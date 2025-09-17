@@ -30,17 +30,20 @@ This project evaluates Large Language Model performance across three critical cu
 ## 📁 Project Structure
 
 ```
-├── data_preparation.ipynb              # Data preprocessing pipeline
+├── data_preprocessing.ipynb             # Data preprocessing pipeline
 ├── openai_analysis_updated.ipynb       # Initial analysis (sample)
-├── openai_analysis_full_40.ipynb       # Full dataset analysis
+├── openai_analysis_full_40.ipynb       # Full dataset analysis (DELETED - merged to main)
 ├── prepared_data.json                  # Processed conversation data
-├── 20-sohbet-trendyol-mila.json          # Original conversation data
+├── 20-sohbet-trendyol-mila.json        # Original conversation data
 ├── openai_analysis_complete_40_chats.json    # Complete analysis results
 ├── sentiment_analysis_results_40_chats.csv   # Sentiment analysis results
 ├── intent_analysis_results_40_chats.csv      # Intent classification results
 ├── resolution_analysis_results_40_chats.csv  # Resolution prediction results
 ├── complete_analysis_summary_40_chats.csv    # Consolidated summary
 ├── TRENDYOL_MILA_CHATBOT_SWOT_ANALIZI.txt   # SWOT Analysis Report
+├── BOT_GELİŞTİRME_ÖNERİLERİ.txt       # Bot Development Recommendations
+├── musteri_talepleri_analizi.ipynb     # Customer Demand Analysis Notebook
+├── musteri_talepleri_ozet.csv          # Customer Demand Summary
 ├── requirements.txt                    # Python dependencies
 ├── .gitignore                         # Git ignore file
 └── README.md                          # This file
@@ -91,13 +94,15 @@ This project evaluates Large Language Model performance across three critical cu
 
 2. **Run the analysis notebooks in order:**
    - `data_preprocessing.ipynb` - Data preprocessing pipeline
-   - `openai_analysis_full_40.ipynb` - Complete 40-chat analysis with structured output
-   - `openai_analysis_updated.ipynb` - Initial sample analysis (optional)
+   - `openai_analysis_updated.ipynb` - Complete 40-chat analysis with structured output
+   - `musteri_talepleri_analizi.ipynb` - Customer demand analysis and visualization
 
 3. **View results in the project folder:**
    - CSV files for detailed analysis
    - JSON file for complete results
    - SWOT analysis TXT report
+   - Bot development recommendations TXT file
+   - Customer demand analysis and visualizations
 
 ## 📊 Dataset Details
 
@@ -141,6 +146,13 @@ This project evaluates Large Language Model performance across three critical cu
 - **API Error Rate**: 0% (Perfect reliability)
 - **Analysis Method**: Structured JSON Schema with Pydantic validation
 
+### Customer Demand Analysis Results
+- **Top Intent Categories**: İade (12.5%), Ödeme (10.0%), Eksik ürün (7.5%)
+- **Intent Distribution**: 25 different categories identified
+- **Coverage**: Top 5 categories represent 45% of all customer requests
+- **Request Types**: Şikayet (45%), Sorun (32.5%), Soru (17.5%), İstek (5%)
+- **Resolution Rate**: 82.5% successfully resolved, 17.5% unresolved
+
 ## 🔧 Key Components
 
 ### Pydantic Models
@@ -171,7 +183,16 @@ Complete analysis results with metadata, confidence scores, and raw responses.
 ### CSV Format
 - Individual task results (sentiment, intent, resolution)
 - Consolidated summary for analysis
+- Customer demand analysis summary
 - Ready for statistical analysis and visualization
+
+### TXT Reports
+- **SWOT Analysis**: Comprehensive strengths, weaknesses, opportunities, threats analysis
+- **Bot Development Recommendations**: 387 lines of detailed improvement strategies
+
+### Interactive Notebooks
+- **Customer Demand Analysis**: Visual charts, statistical analysis, and actionable insights
+- **Data Preprocessing**: Complete data preparation pipeline
 
 ## 🔬 Use Cases
 
@@ -180,6 +201,8 @@ Complete analysis results with metadata, confidence scores, and raw responses.
 - **Turkish NLP Research**: Advanced Turkish language customer service analysis
 - **Conversation Analytics**: Extract actionable insights from customer interactions
 - **SWOT Analysis**: Comprehensive bot performance evaluation and strategic planning
+- **Customer Demand Analysis**: Identify most common support topics and intent distribution
+- **Bot Development Strategy**: Evidence-based recommendations for chatbot improvements
 - **Prompt Engineering**: Optimize AI prompts for better customer service outcomes
 
 ## 🛡 Security & Privacy
@@ -239,8 +262,11 @@ python-dotenv>=0.19.0
 - ✅ **100% API Reliability** with zero failed requests
 - ✅ **Perfect Resolution Analysis** (100% accuracy)
 - ✅ **Comprehensive SWOT Analysis** of chatbot performance
+- ✅ **Strategic Bot Development Recommendations** (387 detailed lines)
+- ✅ **Customer Demand Analysis** with 25+ intent categories
 - ✅ **Production-Ready Prompts** optimized through iterative testing
 - ✅ **Structured JSON Output** with reliable parsing
 - ✅ **Turkish Language Excellence** in customer service context
+- ✅ **Interactive Data Visualizations** with Jupyter notebooks
 
 **Note**: This project requires an OpenAI API key. Estimated cost for full analysis: ~$5-8 for 120 API calls with GPT-5-nano.
